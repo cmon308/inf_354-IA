@@ -1,0 +1,1019 @@
+@RELATION Zoo_Dataset
+
+@ATTRIBUTE 'ID del Animal' INTEGER
+@ATTRIBUTE 'Nombre Común' STRING
+@ATTRIBUTE 'Tipo de Animal' {mamífero, ave, reptil, pez, insecto, anfibio}
+@ATTRIBUTE 'Número de Extremidades' INTEGER
+@ATTRIBUTE 'Método de Reproducción' {ovíparo, vivíparo}
+@ATTRIBUTE 'Velocidad Máxima (km/h)' REAL
+@ATTRIBUTE 'Temperatura Corporal Promedio (°C)' REAL
+@ATTRIBUTE 'Número de Crías por Reproducción' INTEGER
+@ATTRIBUTE 'Altitud Máxima (m)' INTEGER
+@ATTRIBUTE 'Frecuencia Respiratoria (respiraciones/min)' INTEGER
+@ATTRIBUTE 'Frecuencia Cardiaca (latidos/min)' INTEGER
+@ATTRIBUTE 'Hábitat' {selva, desierto, océano, montaña}
+@ATTRIBUTE 'Estado de Conservación' {en peligro, vulnerable, extinto en estado silvestre}
+@ATTRIBUTE 'Peso (kg)' REAL
+
+
+@DATA
+1,'Iguana','Reptil',2,'Ovíparo',46.55,12.3,3,5757,33,78,'Selva','Extinto en estado silvestre',966.1
+2,'Pez Payaso','Pez',6,'Vivíparo',49.31,10.2,9,982,36,66,'Selva','En peligro',1455.8
+3,'Iguana','Reptil',4,'Vivíparo',15.31,35.9,1,3132,21,165,'Desierto','En peligro',2201.6
+4,'Mariposa Monarca','Insecto',4,'Ovíparo',6.26,36.2,8,4442,15,100,'Selva','Extinto en estado silvestre',3700.1
+5,'Zebra','Mamífero',0,'Vivíparo',104.02,14.3,7,3598,11,164,'Desierto','Vulnerable',3603.8
+6,'Pulpo','Insecto',0,'Vivíparo',47.36,18.9,6,5479,16,140,'Océano','Extinto en estado silvestre',1685.6
+7,'Hipopótamo','Mamífero',6,'Ovíparo',14.1,35.5,1,2599,36,55,'Océano','Vulnerable',2553.8
+8,'Libélula','Insecto',4,'Ovíparo',24.83,12.5,9,1344,36,148,'Selva','En peligro',1171.2
+9,'Rinoceronte','Mamífero',2,'Vivíparo',13.25,35.9,2,4840,38,118,'Océano','En peligro',3851.8
+10,'Nutria','Mamífero',6,'Vivíparo',57.89,27.2,5,2465,31,82,'Selva','Vulnerable',983.6
+11,'Águila','Ave',2,'Vivíparo',96.62,29.7,9,4928,13,104,'Desierto','En peligro',4096.8
+12,'Albatros','Ave',8,'Ovíparo',47.82,27.8,8,5919,34,82,'Océano','Vulnerable',4684.3
+13,'Avispa','Insecto',0,'Vivíparo',74.77,27.5,4,3311,38,51,'Montaña','Extinto en estado silvestre',4958.1
+14,'Iguana','Reptil',6,'Ovíparo',81.38,15.6,8,5269,38,115,'Selva','Extinto en estado silvestre',4284.8
+15,'Gorrión','Ave',6,'Ovíparo',85.74,17.1,9,3133,29,64,'Selva','En peligro',1108.6
+16,'Chinchilla','Mamífero',2,'Vivíparo',73.06,27.4,5,4828,25,165,'Océano','En peligro',2082.6
+17,'Mantis Religiosa','Insecto',0,'Ovíparo',66.94,22.0,1,428,26,110,'Océano','En peligro',444.3
+18,'Iguana','Reptil',2,'Vivíparo',57.93,26.2,6,2298,38,170,'Océano','Vulnerable',822.8
+19,'Caracol','Insecto',2,'Vivíparo',57.36,17.6,4,2464,12,171,'Selva','En peligro',248.6
+20,'Panda','Mamífero',0,'Vivíparo',40.62,23.9,6,2597,36,72,'Montaña','Extinto en estado silvestre',3205.5
+21,'Búho','Ave',8,'Vivíparo',61.04,14.3,1,576,33,74,'Selva','Extinto en estado silvestre',2666.0
+22,'Pájaro Carpintero','Ave',4,'Vivíparo',58.01,11.2,4,3262,12,148,'Selva','Extinto en estado silvestre',4585.1
+23,'Pez Espada','Pez',4,'Ovíparo',39.01,38.5,5,549,23,143,'Desierto','Vulnerable',2315.1
+24,'Pez Payaso','Pez',8,'Ovíparo',36.84,31.7,6,4862,23,161,'Selva','Extinto en estado silvestre',3211.6
+25,'Mariposa Monarca','Insecto',0,'Vivíparo',54.08,24.9,5,4552,16,132,'Selva','Extinto en estado silvestre',2008.0
+26,'Camarón','Insecto',6,'Ovíparo',96.56,26.5,2,1292,36,178,'Selva','En peligro',4147.3
+27,'Tortuga','Reptil',0,'Ovíparo',30.48,25.3,3,5039,10,158,'Montaña','Extinto en estado silvestre',4631.9
+28,'Martinete','Ave',2,'Ovíparo',101.6,37.0,5,2291,24,157,'Océano','En peligro',2158.7
+29,'Águila','Ave',0,'Ovíparo',87.15,33.2,7,4375,23,69,'Selva','Extinto en estado silvestre',413.6
+30,'Tiburón','Pez',4,'Vivíparo',32.17,19.8,4,803,13,78,'Desierto','Extinto en estado silvestre',817.8
+31,'Hipopótamo','Mamífero',6,'Ovíparo',2.65,16.5,6,3219,13,111,'Desierto','En peligro',3602.7
+32,'Gorila','Mamífero',8,'Vivíparo',10.14,12.0,9,1132,34,52,'Océano','En peligro',1626.4
+33,'Tiburón','Pez',0,'Vivíparo',106.06,14.4,7,3512,37,104,'Desierto','Extinto en estado silvestre',3926.9
+34,'Camarón','Insecto',6,'Vivíparo',97.02,24.7,3,2496,20,93,'Desierto','Vulnerable',3748.8
+35,'Pájaro Carpintero','Ave',6,'Ovíparo',46.17,16.1,5,3003,10,162,'Montaña','Vulnerable',3471.5
+36,'Flamenco','Ave',4,'Ovíparo',8.34,19.4,9,4194,20,141,'Selva','En peligro',4071.1
+37,'Águila','Ave',2,'Ovíparo',97.52,14.0,5,1578,21,54,'Selva','En peligro',3782.8
+38,'Tigre de Bengala','Mamífero',6,'Ovíparo',31.37,37.7,3,851,24,88,'Selva','Extinto en estado silvestre',3163.0
+39,'Abeja','Insecto',6,'Ovíparo',114.42,11.0,8,1127,38,59,'Selva','Vulnerable',21.2
+40,'Delfín','Mamífero',0,'Ovíparo',63.22,20.6,7,3264,34,112,'Selva','Vulnerable',2578.4
+41,'Abeja','Insecto',8,'Vivíparo',86.11,17.7,5,4722,35,58,'Desierto','Extinto en estado silvestre',2976.3
+42,'Tiburón','Pez',0,'Ovíparo',55.96,10.2,5,4141,33,133,'Montaña','Vulnerable',4803.2
+43,'Pulpo','Insecto',4,'Ovíparo',4.29,37.9,1,573,24,160,'Selva','Extinto en estado silvestre',3252.4
+44,'Elefante','Mamífero',6,'Ovíparo',8.52,19.4,8,4721,35,78,'Desierto','Extinto en estado silvestre',2877.4
+45,'Flamenco','Ave',2,'Vivíparo',117.14,25.1,6,1221,31,148,'Océano','En peligro',2706.0
+46,'León','Mamífero',6,'Vivíparo',50.06,27.5,5,3993,36,64,'Desierto','Extinto en estado silvestre',516.6
+47,'Pez Globo','Pez',2,'Vivíparo',22.8,28.3,7,4124,13,84,'Montaña','Vulnerable',2138.2
+48,'Águila','Ave',2,'Ovíparo',86.72,23.8,2,4264,36,110,'Selva','Vulnerable',671.9
+49,'Koala','Mamífero',2,'Ovíparo',105.98,27.8,3,1550,15,69,'Selva','Extinto en estado silvestre',263.6
+50,'Flamenco','Ave',8,'Vivíparo',32.77,32.6,9,633,31,107,'Selva','En peligro',1647.4
+51,'Pez Payaso','Pez',0,'Vivíparo',68.96,38.6,5,868,11,149,'Montaña','Vulnerable',3227.2
+52,'Caracol','Insecto',4,'Vivíparo',30.2,29.7,6,4983,32,135,'Océano','En peligro',4334.0
+53,'Estrella de Mar','Insecto',8,'Vivíparo',98.88,23.9,8,1360,18,137,'Océano','Extinto en estado silvestre',4051.8
+54,'Iguana','Reptil',8,'Vivíparo',11.33,23.3,3,4891,17,50,'Desierto','Extinto en estado silvestre',1473.5
+55,'Pájaro Carpintero','Ave',2,'Ovíparo',45.33,31.3,1,3636,28,163,'Desierto','Vulnerable',230.1
+56,'Tiburón','Pez',8,'Ovíparo',46.21,28.8,4,2345,17,140,'Selva','Vulnerable',2013.5
+57,'Rinoceronte','Mamífero',4,'Ovíparo',76.79,22.6,2,3995,29,62,'Selva','En peligro',1574.0
+58,'Perro','Mamífero',4,'Ovíparo',22.21,20.1,9,1478,19,67,'Selva','Extinto en estado silvestre',1856.4
+59,'Cocodrilo','Reptil',6,'Vivíparo',57.53,39.8,4,3544,26,101,'Desierto','En peligro',2795.5
+60,'Canguro','Mamífero',8,'Ovíparo',66.69,33.0,9,2013,28,119,'Selva','Vulnerable',152.2
+61,'Caballito de Mar','Pez',6,'Vivíparo',107.01,16.2,7,3148,10,107,'Desierto','Vulnerable',1854.1
+62,'Pez Payaso','Pez',4,'Vivíparo',63.67,18.8,7,657,30,76,'Desierto','En peligro',2793.2
+63,'Camarón','Insecto',8,'Vivíparo',16.7,36.8,1,244,35,106,'Montaña','Extinto en estado silvestre',2154.9
+64,'Gorrión','Ave',2,'Ovíparo',13.06,29.8,2,3495,24,173,'Selva','Vulnerable',3336.2
+65,'Pájaro Carpintero','Ave',2,'Ovíparo',110.97,19.3,7,5113,20,163,'Selva','Extinto en estado silvestre',930.7
+66,'Zebra','Mamífero',8,'Vivíparo',117.58,20.9,5,3764,34,58,'Desierto','Vulnerable',769.2
+67,'Águila','Ave',6,'Ovíparo',20.88,21.4,7,135,16,128,'Desierto','Extinto en estado silvestre',1539.4
+68,'Serpiente','Reptil',6,'Ovíparo',90.41,15.6,3,5843,25,108,'Desierto','Vulnerable',508.7
+69,'Gorrión','Ave',2,'Vivíparo',30.84,25.3,8,5256,12,71,'Montaña','Extinto en estado silvestre',1181.4
+70,'Orangután','Mamífero',6,'Ovíparo',100.12,33.0,4,204,32,133,'Montaña','Extinto en estado silvestre',434.6
+71,'Suricata','Ave',2,'Ovíparo',12.5,26.9,8,883,21,56,'Desierto','Vulnerable',2009.9
+72,'Pez Payaso','Pez',0,'Ovíparo',53.02,29.7,6,3732,33,166,'Montaña','Extinto en estado silvestre',3557.3
+73,'Pez Payaso','Pez',2,'Vivíparo',71.93,27.9,9,5979,25,86,'Montaña','Extinto en estado silvestre',1432.8
+74,'Escorpión','Insecto',0,'Ovíparo',102.45,11.8,6,4651,29,117,'Océano','Vulnerable',18.8
+75,'Caracol','Insecto',8,'Ovíparo',102.95,15.6,4,5534,28,155,'Selva','En peligro',2785.4
+76,'Caracol','Insecto',0,'Ovíparo',22.93,20.5,3,884,11,67,'Desierto','Vulnerable',3459.7
+77,'Avispa','Insecto',4,'Ovíparo',116.09,36.7,4,982,39,72,'Océano','En peligro',1956.6
+78,'Pájaro Carpintero','Ave',6,'Vivíparo',76.99,20.5,7,2444,17,144,'Océano','Vulnerable',1485.1
+79,'Panda','Mamífero',0,'Vivíparo',79.39,19.8,8,5281,28,125,'Montaña','En peligro',2453.2
+80,'Flamenco','Ave',4,'Ovíparo',106.79,12.4,2,1220,32,64,'Desierto','En peligro',506.3
+81,'Hipopótamo','Mamífero',4,'Vivíparo',39.12,39.2,9,705,20,179,'Montaña','Vulnerable',3219.7
+82,'Orangután','Mamífero',6,'Ovíparo',50.41,33.4,7,3901,36,171,'Océano','Extinto en estado silvestre',3666.5
+83,'Tigre de Bengala','Mamífero',2,'Vivíparo',118.21,33.0,7,2606,20,105,'Océano','Vulnerable',3523.2
+84,'Tigre','Mamífero',4,'Ovíparo',2.97,21.5,4,2273,11,146,'Océano','En peligro',1643.4
+85,'Pez Espada','Pez',0,'Vivíparo',104.19,12.4,7,1025,14,63,'Selva','En peligro',4213.6
+86,'León','Mamífero',6,'Ovíparo',101.26,17.9,2,3283,14,153,'Desierto','En peligro',4734.2
+87,'Águila','Ave',0,'Ovíparo',32.23,35.6,3,1991,34,179,'Selva','Vulnerable',1485.4
+88,'Gorila','Mamífero',2,'Ovíparo',98.78,15.4,2,1316,33,53,'Océano','En peligro',1313.7
+89,'Tiburón','Pez',6,'Vivíparo',40.3,36.8,5,3151,33,177,'Océano','Extinto en estado silvestre',3520.6
+90,'Gorrión','Ave',4,'Vivíparo',75.85,26.1,1,118,19,141,'Océano','Extinto en estado silvestre',3541.4
+91,'Iguana','Reptil',0,'Ovíparo',54.18,31.4,2,4693,11,126,'Selva','Extinto en estado silvestre',2552.1
+92,'Albatros','Ave',0,'Ovíparo',13.06,23.6,6,1854,24,127,'Montaña','Vulnerable',4616.6
+93,'Caballito de Mar','Pez',4,'Ovíparo',107.55,38.0,6,4103,27,163,'Desierto','Extinto en estado silvestre',731.7
+94,'Tiburón','Pez',4,'Vivíparo',65.89,17.2,8,1908,21,123,'Montaña','Vulnerable',2386.9
+95,'Abeja','Insecto',2,'Ovíparo',58.34,27.2,9,4085,19,174,'Montaña','En peligro',176.1
+96,'Tortuga','Reptil',2,'Vivíparo',105.66,12.1,9,426,16,125,'Océano','Vulnerable',263.4
+97,'León','Mamífero',4,'Vivíparo',40.03,24.4,7,2649,24,133,'Selva','Extinto en estado silvestre',268.5
+98,'Pez Payaso','Pez',6,'Ovíparo',68.87,39.2,1,5735,24,125,'Montaña','Vulnerable',2459.0
+99,'Escorpión','Insecto',4,'Ovíparo',105.99,12.6,4,2326,21,116,'Selva','Vulnerable',2944.9
+100,'Avispa','Insecto',4,'Ovíparo',41.8,25.2,7,5881,38,120,'Selva','Vulnerable',17.5
+101,'Oso Pardo','Mamífero',8,'Vivíparo',95.43,28.1,2,639,38,126,'Selva','Vulnerable',3162.8
+102,'Martinete','Ave',6,'Ovíparo',62.21,38.0,9,1203,29,124,'Desierto','En peligro',2448.6
+103,'Tortuga','Reptil',6,'Ovíparo',19.77,18.9,1,4700,24,165,'Montaña','Vulnerable',1119.1
+104,'Lobo','Mamífero',2,'Vivíparo',5.83,25.1,9,3765,12,133,'Océano','Vulnerable',75.6
+105,'Jirafa','Mamífero',2,'Vivíparo',87.48,39.6,7,2763,25,98,'Océano','Vulnerable',780.6
+106,'Flamenco','Ave',2,'Ovíparo',32.16,33.1,6,2265,38,112,'Desierto','En peligro',3001.7
+107,'Gorrión','Ave',0,'Ovíparo',98.07,34.3,7,145,28,76,'Montaña','En peligro',3294.2
+108,'Caballito de Mar','Pez',6,'Vivíparo',23.48,33.4,2,3130,16,154,'Océano','En peligro',3235.3
+109,'Flamenco','Ave',8,'Vivíparo',68.57,25.5,2,5772,26,107,'Selva','Vulnerable',765.9
+110,'Pájaro Carpintero','Ave',2,'Ovíparo',12.12,23.0,3,1056,13,171,'Océano','Vulnerable',4556.1
+111,'Tortuga','Reptil',2,'Vivíparo',88.56,17.6,6,1457,31,171,'Montaña','En peligro',2054.8
+112,'Cocodrilo','Reptil',2,'Vivíparo',92.12,24.0,1,5490,24,58,'Selva','Vulnerable',3840.1
+113,'Cocodrilo','Reptil',2,'Ovíparo',110.07,10.6,4,3788,18,178,'Desierto','Vulnerable',832.5
+114,'Orangután','Mamífero',2,'Ovíparo',67.8,12.9,8,1607,37,125,'Océano','En peligro',2352.9
+115,'Cocodrilo','Reptil',0,'Vivíparo',13.67,18.6,8,5819,26,141,'Océano','En peligro',2607.7
+116,'Tortuga','Reptil',8,'Ovíparo',99.5,20.0,5,1073,10,68,'Desierto','Extinto en estado silvestre',3851.8
+117,'Camarón','Insecto',6,'Vivíparo',38.35,31.2,7,2369,11,171,'Montaña','En peligro',3107.6
+118,'Cocodrilo','Reptil',8,'Vivíparo',108.05,15.1,5,1522,16,129,'Selva','En peligro',1996.6
+119,'Koala','Mamífero',4,'Vivíparo',117.36,33.9,4,3154,32,137,'Océano','En peligro',1412.6
+120,'Abeja','Insecto',6,'Vivíparo',16.77,34.0,6,535,23,55,'Montaña','En peligro',4864.8
+121,'Gato','Mamífero',2,'Vivíparo',10.87,27.6,8,3079,14,162,'Selva','Vulnerable',1422.7
+122,'Panda','Mamífero',4,'Ovíparo',107.81,24.7,1,760,13,143,'Océano','En peligro',647.5
+123,'Libélula','Insecto',4,'Ovíparo',107.97,24.0,3,5218,22,72,'Montaña','Vulnerable',1502.2
+124,'Abeja','Insecto',4,'Vivíparo',70.64,22.6,4,207,19,68,'Montaña','Vulnerable',1634.7
+125,'Escorpión','Insecto',4,'Vivíparo',106.69,12.7,5,4910,22,179,'Desierto','En peligro',639.4
+126,'Avispa','Insecto',2,'Ovíparo',111.73,29.7,1,4993,31,157,'Océano','En peligro',3540.8
+127,'Nutria','Mamífero',4,'Ovíparo',67.09,27.3,9,3263,33,154,'Selva','Extinto en estado silvestre',3095.9
+128,'Libélula','Insecto',8,'Ovíparo',82.7,10.5,8,1997,21,92,'Océano','Vulnerable',1583.1
+129,'Águila','Ave',2,'Ovíparo',74.02,16.1,2,4005,32,82,'Desierto','En peligro',4965.0
+130,'Serpiente','Reptil',4,'Vivíparo',21.78,23.1,5,1395,27,168,'Selva','Vulnerable',3275.1
+131,'Tortuga','Reptil',4,'Vivíparo',52.91,37.0,9,25,20,83,'Montaña','Extinto en estado silvestre',3516.0
+132,'Pájaro Carpintero','Ave',8,'Ovíparo',82.08,39.7,3,506,27,127,'Desierto','En peligro',2786.0
+133,'Panda','Mamífero',0,'Vivíparo',73.62,32.5,5,860,31,149,'Selva','Extinto en estado silvestre',2757.9
+134,'Tigre','Mamífero',0,'Vivíparo',26.6,32.5,9,4473,21,69,'Selva','Vulnerable',100.2
+135,'Cocodrilo','Reptil',8,'Ovíparo',109.26,22.5,6,3027,10,111,'Océano','Extinto en estado silvestre',3854.6
+136,'Pez Globo','Pez',0,'Vivíparo',94.3,27.1,5,4160,30,51,'Montaña','Extinto en estado silvestre',4553.7
+137,'Gaviota','Ave',6,'Vivíparo',9.15,17.0,8,3981,25,137,'Desierto','Vulnerable',611.4
+138,'Pájaro Carpintero','Ave',6,'Vivíparo',41.95,32.1,5,2850,23,167,'Montaña','Vulnerable',3978.2
+139,'Iguana','Reptil',6,'Ovíparo',119.47,11.8,9,596,10,117,'Desierto','Vulnerable',2671.6
+140,'Pulpo','Insecto',0,'Ovíparo',47.39,22.5,3,2019,16,128,'Océano','Vulnerable',1426.6
+141,'Caballito de Mar','Pez',6,'Vivíparo',79.95,34.9,1,3891,28,132,'Selva','Vulnerable',4604.4
+142,'Delfín','Mamífero',6,'Ovíparo',12.98,39.4,4,4461,34,161,'Océano','Vulnerable',87.0
+143,'Gorila','Mamífero',0,'Ovíparo',38.0,30.9,7,5907,14,84,'Desierto','Extinto en estado silvestre',1370.4
+144,'Canguro','Mamífero',8,'Vivíparo',105.96,15.9,3,5977,26,152,'Montaña','Vulnerable',4431.3
+145,'Panda','Mamífero',2,'Ovíparo',61.75,27.1,8,4594,19,90,'Selva','Vulnerable',2405.1
+146,'Flamenco','Ave',6,'Ovíparo',99.19,26.8,2,3866,13,171,'Desierto','Vulnerable',2994.6
+147,'Martinete','Ave',0,'Vivíparo',1.91,39.0,9,168,33,81,'Selva','Vulnerable',3748.9
+148,'Escorpión','Insecto',2,'Vivíparo',80.27,35.2,3,1923,23,171,'Selva','En peligro',740.0
+149,'Águila','Ave',2,'Ovíparo',36.69,11.5,6,4971,32,103,'Océano','Extinto en estado silvestre',1076.0
+150,'Avispa','Insecto',4,'Ovíparo',103.43,16.6,7,4135,15,65,'Desierto','Extinto en estado silvestre',4993.1
+151,'Estrella de Mar','Insecto',2,'Vivíparo',113.34,35.3,5,3309,34,59,'Montaña','En peligro',1187.3
+152,'Elefante','Mamífero',6,'Vivíparo',82.83,39.2,5,508,37,102,'Océano','Extinto en estado silvestre',2696.1
+153,'Perro','Mamífero',8,'Vivíparo',18.38,18.8,1,4076,21,131,'Océano','Extinto en estado silvestre',1493.6
+154,'Albatros','Ave',6,'Ovíparo',56.7,30.7,4,5117,39,83,'Océano','Vulnerable',4257.1
+155,'Suricata','Ave',4,'Ovíparo',56.27,19.2,1,873,29,134,'Desierto','Extinto en estado silvestre',4808.8
+156,'Mantis Religiosa','Insecto',2,'Vivíparo',99.81,11.2,9,3842,35,134,'Desierto','En peligro',706.5
+157,'Iguana','Reptil',4,'Vivíparo',55.81,34.9,9,5823,21,178,'Selva','Extinto en estado silvestre',3002.9
+158,'Perro','Mamífero',6,'Ovíparo',40.58,32.2,5,5916,39,108,'Selva','En peligro',4057.9
+159,'Pez Espada','Pez',6,'Ovíparo',73.75,11.6,5,181,10,148,'Selva','En peligro',4115.2
+160,'Cocodrilo','Reptil',6,'Vivíparo',78.0,14.4,5,6,39,74,'Selva','Extinto en estado silvestre',2202.3
+161,'Orangután','Mamífero',8,'Ovíparo',97.38,40.0,7,4760,21,80,'Océano','Vulnerable',1127.0
+162,'Panda','Mamífero',6,'Ovíparo',108.15,29.5,6,407,35,123,'Montaña','En peligro',1935.8
+163,'Flamenco','Ave',6,'Ovíparo',106.9,34.0,2,5418,15,174,'Selva','Extinto en estado silvestre',3755.8
+164,'Pez Payaso','Pez',2,'Vivíparo',75.58,21.7,3,1422,13,52,'Desierto','Extinto en estado silvestre',4968.9
+165,'Tiburón','Pez',8,'Vivíparo',63.39,25.5,5,1614,26,135,'Selva','Vulnerable',2771.5
+166,'Koala','Mamífero',2,'Ovíparo',96.35,28.6,7,5671,19,151,'Desierto','Vulnerable',975.7
+167,'Camarón','Insecto',4,'Vivíparo',37.51,34.2,2,2522,28,170,'Montaña','Extinto en estado silvestre',209.8
+168,'Tiburón','Pez',0,'Vivíparo',91.19,20.2,4,825,20,153,'Océano','Vulnerable',4718.5
+169,'Serpiente','Reptil',2,'Vivíparo',61.23,30.2,1,5740,10,111,'Montaña','En peligro',2415.2
+170,'Camarón','Insecto',8,'Ovíparo',15.71,33.3,7,95,14,137,'Montaña','Extinto en estado silvestre',3583.0
+171,'Gaviota','Ave',2,'Vivíparo',90.59,34.2,2,3103,33,170,'Océano','Vulnerable',3300.9
+172,'Chinchilla','Mamífero',0,'Vivíparo',78.17,25.0,8,3339,37,82,'Desierto','Extinto en estado silvestre',4454.4
+173,'Tigre de Bengala','Mamífero',2,'Ovíparo',10.81,24.2,1,2795,23,140,'Montaña','Vulnerable',1330.5
+174,'Cocodrilo','Reptil',0,'Ovíparo',54.59,13.1,2,2440,22,88,'Océano','En peligro',2208.7
+175,'Tortuga','Reptil',8,'Vivíparo',58.89,24.9,8,3603,11,78,'Desierto','Extinto en estado silvestre',4568.1
+176,'Gorrión','Ave',2,'Vivíparo',78.77,31.1,5,398,37,154,'Desierto','Vulnerable',2927.9
+177,'Suricata','Ave',8,'Vivíparo',81.74,37.6,5,1261,23,74,'Desierto','En peligro',356.9
+178,'Pez Globo','Pez',8,'Ovíparo',23.67,13.8,7,728,15,68,'Océano','En peligro',972.5
+179,'Pulpo','Insecto',4,'Vivíparo',5.01,39.1,4,5090,15,148,'Selva','Vulnerable',1186.2
+180,'Chinchilla','Mamífero',4,'Ovíparo',95.49,17.0,9,1656,30,65,'Océano','Extinto en estado silvestre',4968.9
+181,'Tiburón','Pez',2,'Ovíparo',117.81,15.3,3,807,32,121,'Montaña','Vulnerable',1120.8
+182,'Flamenco','Ave',2,'Ovíparo',112.94,13.4,8,5469,10,134,'Océano','Vulnerable',4348.4
+183,'Cocodrilo','Reptil',8,'Vivíparo',60.6,39.7,3,5470,35,55,'Océano','En peligro',390.6
+184,'Tiburón','Pez',4,'Vivíparo',63.94,26.8,8,3845,29,86,'Montaña','Vulnerable',908.7
+185,'Cocodrilo','Reptil',2,'Vivíparo',111.74,18.1,1,766,20,103,'Océano','Vulnerable',4360.3
+186,'Camarón','Insecto',2,'Ovíparo',65.75,19.5,7,5130,31,53,'Océano','Extinto en estado silvestre',4494.7
+187,'Serpiente','Reptil',2,'Ovíparo',34.04,38.5,1,5183,39,134,'Montaña','Vulnerable',881.1
+188,'Rinoceronte','Mamífero',4,'Vivíparo',81.63,37.0,2,4009,13,64,'Selva','Extinto en estado silvestre',1149.3
+189,'Estrella de Mar','Insecto',2,'Vivíparo',57.79,20.5,1,5241,15,108,'Selva','Vulnerable',2652.9
+190,'Cocodrilo','Reptil',8,'Ovíparo',94.42,11.9,3,2234,11,91,'Desierto','En peligro',263.5
+191,'Tiburón','Pez',2,'Vivíparo',94.21,35.0,9,2247,36,165,'Selva','Vulnerable',4726.4
+192,'Nutria','Mamífero',6,'Vivíparo',112.38,37.4,1,381,34,55,'Océano','Extinto en estado silvestre',1810.4
+193,'Lobo','Mamífero',0,'Ovíparo',17.4,35.1,3,294,29,68,'Montaña','Extinto en estado silvestre',2446.5
+194,'Águila','Ave',8,'Ovíparo',63.04,37.4,2,54,38,171,'Desierto','Vulnerable',525.3
+195,'Gorrión','Ave',2,'Vivíparo',94.52,27.3,5,5963,14,153,'Océano','Vulnerable',162.8
+196,'Tiburón','Pez',6,'Ovíparo',52.75,35.2,7,642,24,139,'Desierto','Vulnerable',2339.1
+197,'Gorrión','Ave',4,'Ovíparo',75.6,38.3,6,5546,32,175,'Montaña','Extinto en estado silvestre',608.4
+198,'Cocodrilo','Reptil',8,'Vivíparo',98.23,36.7,5,79,17,124,'Océano','Extinto en estado silvestre',3151.6
+199,'Cacatúa','Ave',8,'Ovíparo',57.33,27.6,3,639,26,159,'Desierto','En peligro',3972.4
+200,'Perro','Mamífero',2,'Vivíparo',49.59,32.4,7,1512,32,171,'Desierto','Vulnerable',158.5
+201,'Pez Espada','Pez',4,'Ovíparo',22.49,31.6,9,3802,19,59,'Selva','Extinto en estado silvestre',3061.2
+202,'Cocodrilo','Reptil',2,'Vivíparo',99.12,34.1,2,5370,18,66,'Desierto','Extinto en estado silvestre',4078.2
+203,'Elefante','Mamífero',6,'Ovíparo',95.7,16.9,6,2343,11,64,'Selva','Extinto en estado silvestre',2197.2
+204,'Puma','Mamífero',0,'Ovíparo',89.43,10.1,5,4043,20,52,'Selva','Extinto en estado silvestre',4798.5
+205,'Escorpión','Insecto',4,'Ovíparo',47.8,25.3,9,3906,11,105,'Montaña','En peligro',556.1
+206,'Búho','Ave',0,'Vivíparo',70.4,33.0,8,4834,36,75,'Selva','Extinto en estado silvestre',1615.0
+207,'Serpiente','Reptil',6,'Ovíparo',15.75,13.8,9,4268,25,152,'Desierto','Extinto en estado silvestre',1150.5
+208,'Caballito de Mar','Pez',8,'Ovíparo',39.02,26.0,7,898,13,136,'Selva','Vulnerable',4981.0
+209,'Caballito de Mar','Pez',6,'Ovíparo',52.83,19.4,5,3324,37,110,'Selva','En peligro',1471.0
+210,'Pez Espada','Pez',0,'Ovíparo',6.18,35.1,4,3998,26,104,'Desierto','En peligro',1939.7
+211,'Abeja','Insecto',4,'Vivíparo',13.33,13.0,8,4631,18,52,'Montaña','En peligro',4238.1
+212,'Tortuga','Reptil',2,'Ovíparo',99.74,35.4,2,1512,21,118,'Montaña','Vulnerable',4649.8
+213,'Lobo','Mamífero',0,'Ovíparo',116.57,28.3,1,1820,14,100,'Desierto','En peligro',4688.7
+214,'Mariposa Monarca','Insecto',4,'Ovíparo',39.32,37.6,3,2815,12,103,'Océano','Extinto en estado silvestre',2790.9
+215,'Búho','Ave',0,'Ovíparo',13.7,38.1,7,2486,15,61,'Océano','En peligro',3316.5
+216,'Tigre de Bengala','Mamífero',8,'Vivíparo',112.31,34.3,1,1312,16,168,'Desierto','Extinto en estado silvestre',1745.9
+217,'Caballito de Mar','Pez',8,'Ovíparo',109.8,25.9,5,2021,13,162,'Selva','En peligro',3035.8
+218,'Martinete','Ave',2,'Vivíparo',78.9,14.3,5,3250,39,169,'Desierto','En peligro',1513.8
+219,'Tortuga','Reptil',8,'Vivíparo',41.29,16.8,3,5199,23,138,'Desierto','Extinto en estado silvestre',3730.2
+220,'Serpiente','Reptil',6,'Vivíparo',14.4,22.5,1,4192,38,155,'Océano','Vulnerable',1536.1
+221,'Camarón','Insecto',2,'Ovíparo',112.8,31.9,5,4809,23,163,'Océano','Vulnerable',4397.1
+222,'Tortuga','Reptil',0,'Vivíparo',110.53,26.3,8,29,11,80,'Desierto','Vulnerable',717.5
+223,'Pez Payaso','Pez',6,'Ovíparo',89.44,23.1,9,993,37,60,'Selva','Extinto en estado silvestre',2859.1
+224,'Avispa','Insecto',4,'Vivíparo',112.13,24.3,6,5692,30,170,'Montaña','Extinto en estado silvestre',2603.4
+225,'Libélula','Insecto',0,'Ovíparo',17.63,32.2,1,5563,24,172,'Desierto','En peligro',1318.7
+226,'Pez Espada','Pez',8,'Ovíparo',14.0,11.0,5,5794,21,94,'Desierto','En peligro',140.1
+227,'Cocodrilo','Reptil',0,'Ovíparo',23.85,23.3,2,1286,23,139,'Montaña','Extinto en estado silvestre',742.8
+228,'Martinete','Ave',8,'Vivíparo',26.64,27.2,1,5509,32,121,'Océano','En peligro',4839.8
+229,'Camarón','Insecto',6,'Ovíparo',99.43,27.7,3,863,19,152,'Selva','En peligro',4706.5
+230,'Pájaro Carpintero','Ave',6,'Vivíparo',110.69,28.6,5,5185,35,86,'Océano','Vulnerable',596.6
+231,'Albatros','Ave',6,'Ovíparo',26.66,11.6,9,3803,12,150,'Montaña','Extinto en estado silvestre',1874.4
+232,'Gaviota','Ave',2,'Ovíparo',56.06,26.7,7,4948,11,161,'Montaña','Vulnerable',2325.7
+233,'Martinete','Ave',8,'Ovíparo',55.08,26.5,6,5904,11,79,'Montaña','En peligro',2390.4
+234,'Pez Globo','Pez',0,'Vivíparo',22.17,35.6,9,2578,20,87,'Montaña','En peligro',1494.2
+235,'Rinoceronte','Mamífero',0,'Vivíparo',102.55,32.8,6,1057,21,58,'Selva','Vulnerable',4564.8
+236,'Serpiente','Reptil',0,'Ovíparo',63.18,10.9,4,2287,24,70,'Desierto','Extinto en estado silvestre',4542.5
+237,'Elefante','Mamífero',2,'Ovíparo',68.38,26.7,7,595,21,118,'Desierto','En peligro',94.7
+238,'Panda','Mamífero',2,'Ovíparo',31.75,30.7,2,1940,20,68,'Montaña','Extinto en estado silvestre',3250.0
+239,'Caracol','Insecto',8,'Ovíparo',67.54,27.4,2,2361,29,161,'Selva','Vulnerable',371.9
+240,'Puma','Mamífero',2,'Ovíparo',95.31,30.3,6,3220,29,129,'Montaña','En peligro',2987.5
+241,'Tigre de Bengala','Mamífero',6,'Ovíparo',37.29,13.5,5,1818,23,67,'Selva','Vulnerable',4334.5
+242,'Pez Espada','Pez',0,'Vivíparo',14.48,15.1,6,5574,14,129,'Desierto','Extinto en estado silvestre',3247.7
+243,'Gaviota','Ave',6,'Ovíparo',70.5,27.5,2,1001,28,174,'Selva','En peligro',2344.7
+244,'Koala','Mamífero',2,'Vivíparo',76.66,34.0,2,156,36,165,'Desierto','Extinto en estado silvestre',4789.5
+245,'Rinoceronte','Mamífero',0,'Vivíparo',25.05,10.8,1,2952,39,81,'Selva','Extinto en estado silvestre',3733.0
+246,'Mantis Religiosa','Insecto',4,'Ovíparo',30.55,23.1,2,3303,26,137,'Océano','En peligro',1246.6
+247,'Tortuga','Reptil',6,'Ovíparo',19.22,39.8,7,1230,38,121,'Selva','Vulnerable',1934.7
+248,'Estrella de Mar','Insecto',4,'Vivíparo',110.64,33.0,2,1189,24,179,'Montaña','En peligro',3799.4
+249,'Tortuga','Reptil',8,'Vivíparo',26.35,23.5,3,5902,29,103,'Océano','Extinto en estado silvestre',96.7
+250,'Cocodrilo','Reptil',6,'Vivíparo',2.27,12.9,6,1949,26,152,'Océano','Extinto en estado silvestre',319.9
+251,'Serpiente','Reptil',0,'Ovíparo',100.98,20.8,6,4600,38,91,'Océano','Extinto en estado silvestre',4297.1
+252,'Tiburón','Pez',0,'Ovíparo',96.58,14.6,9,543,21,151,'Océano','En peligro',214.8
+253,'Pez Espada','Pez',4,'Vivíparo',55.33,37.6,2,1575,17,168,'Océano','Extinto en estado silvestre',3392.6
+254,'Pájaro Carpintero','Ave',0,'Vivíparo',95.86,30.6,7,1099,24,164,'Océano','En peligro',1594.6
+255,'Tortuga','Reptil',6,'Ovíparo',54.5,35.7,1,5331,30,109,'Océano','En peligro',4129.5
+256,'Caballito de Mar','Pez',2,'Vivíparo',27.72,36.9,6,5889,11,173,'Selva','Extinto en estado silvestre',4236.7
+257,'Pez Payaso','Pez',2,'Ovíparo',51.7,28.2,9,5864,37,98,'Montaña','Extinto en estado silvestre',4766.7
+258,'Perro','Mamífero',0,'Ovíparo',58.94,10.2,8,5141,30,72,'Selva','Extinto en estado silvestre',477.8
+259,'Cocodrilo','Reptil',8,'Vivíparo',2.07,26.7,6,4743,30,117,'Océano','Vulnerable',2114.3
+260,'Libélula','Insecto',6,'Ovíparo',14.49,34.1,6,291,26,84,'Océano','Vulnerable',2869.8
+261,'Gato','Mamífero',8,'Ovíparo',105.1,19.4,6,1433,30,71,'Océano','Vulnerable',4580.3
+262,'Tiburón','Pez',4,'Vivíparo',47.7,37.8,8,612,33,52,'Selva','Extinto en estado silvestre',1332.6
+263,'Pez Espada','Pez',0,'Ovíparo',40.44,39.9,2,2640,19,124,'Montaña','Extinto en estado silvestre',358.2
+264,'Caballito de Mar','Pez',4,'Ovíparo',106.71,26.5,9,2694,27,59,'Montaña','Vulnerable',1008.9
+265,'Pez Espada','Pez',8,'Vivíparo',19.39,25.9,8,5631,33,116,'Selva','En peligro',2477.9
+266,'Abeja','Insecto',6,'Ovíparo',26.82,29.7,2,730,38,99,'Desierto','Vulnerable',3405.3
+267,'Suricata','Ave',8,'Ovíparo',99.53,27.0,8,217,33,176,'Desierto','Vulnerable',3453.4
+268,'Suricata','Ave',2,'Ovíparo',34.28,14.8,1,5535,21,64,'Montaña','En peligro',373.4
+269,'Serpiente','Reptil',8,'Vivíparo',76.35,18.1,6,1485,10,171,'Desierto','Vulnerable',3807.1
+270,'Caballito de Mar','Pez',8,'Ovíparo',89.01,16.1,6,3848,13,97,'Selva','Vulnerable',3301.2
+271,'Iguana','Reptil',8,'Vivíparo',27.5,12.2,9,1770,14,163,'Montaña','Vulnerable',2037.8
+272,'Camarón','Insecto',8,'Ovíparo',31.16,14.2,9,5690,35,55,'Montaña','En peligro',2855.5
+273,'Iguana','Reptil',6,'Vivíparo',62.44,39.2,5,5696,33,53,'Selva','En peligro',3838.7
+274,'Cacatúa','Ave',0,'Vivíparo',95.27,26.6,1,245,12,72,'Selva','Vulnerable',1310.5
+275,'Gaviota','Ave',6,'Ovíparo',66.97,13.8,1,4989,10,114,'Selva','Extinto en estado silvestre',4700.2
+276,'Gorrión','Ave',4,'Vivíparo',9.01,31.4,7,403,16,105,'Océano','Vulnerable',688.9
+277,'Cocodrilo','Reptil',2,'Ovíparo',42.75,24.3,4,3760,29,64,'Desierto','En peligro',4511.1
+278,'Pez Globo','Pez',0,'Ovíparo',40.35,16.7,9,4598,35,140,'Desierto','En peligro',3704.3
+279,'Delfín','Mamífero',2,'Vivíparo',97.1,38.3,3,4479,21,153,'Montaña','En peligro',3302.6
+280,'Gaviota','Ave',2,'Ovíparo',35.47,16.7,6,2080,30,58,'Desierto','Extinto en estado silvestre',414.6
+281,'Serpiente','Reptil',0,'Vivíparo',108.24,12.9,9,4497,15,88,'Montaña','Extinto en estado silvestre',4595.0
+282,'Elefante','Mamífero',0,'Ovíparo',40.86,16.2,4,1448,29,89,'Montaña','Extinto en estado silvestre',1476.7
+283,'Gorrión','Ave',4,'Vivíparo',24.1,37.4,5,2704,26,65,'Océano','Vulnerable',3728.1
+284,'Flamenco','Ave',6,'Vivíparo',65.25,35.7,5,3959,20,130,'Montaña','En peligro',4424.0
+285,'Mantis Religiosa','Insecto',0,'Ovíparo',46.98,36.8,5,268,17,140,'Océano','Vulnerable',1221.5
+286,'Búho','Ave',4,'Ovíparo',78.06,37.5,2,1776,20,114,'Desierto','Vulnerable',4573.0
+287,'Canguro','Mamífero',8,'Ovíparo',109.97,12.3,2,112,22,164,'Océano','Extinto en estado silvestre',3059.7
+288,'Tigre','Mamífero',0,'Ovíparo',112.95,31.3,1,3912,18,99,'Selva','Vulnerable',3295.2
+289,'Pez Espada','Pez',6,'Vivíparo',28.06,29.9,1,5623,28,78,'Océano','Extinto en estado silvestre',4572.6
+290,'Zebra','Mamífero',8,'Ovíparo',20.31,39.8,4,5101,35,156,'Montaña','Extinto en estado silvestre',2633.7
+291,'Serpiente','Reptil',8,'Vivíparo',112.85,31.4,3,1344,29,172,'Desierto','En peligro',2203.3
+292,'Tortuga','Reptil',8,'Vivíparo',97.68,33.8,4,3111,14,156,'Montaña','En peligro',3166.2
+293,'Águila','Ave',8,'Ovíparo',32.14,31.4,6,4460,19,60,'Desierto','Vulnerable',2770.2
+294,'Pez Globo','Pez',2,'Ovíparo',96.79,28.6,1,205,22,150,'Montaña','Vulnerable',307.5
+295,'Gaviota','Ave',6,'Vivíparo',89.19,26.6,8,1909,34,84,'Océano','En peligro',902.5
+296,'Pez Espada','Pez',4,'Vivíparo',31.17,39.1,8,980,14,129,'Montaña','Vulnerable',67.9
+297,'Camarón','Insecto',0,'Ovíparo',108.79,38.1,7,1258,32,165,'Selva','En peligro',540.9
+298,'Pez Payaso','Pez',4,'Ovíparo',39.29,23.1,4,4202,12,157,'Selva','En peligro',3649.3
+299,'Caracol','Insecto',2,'Vivíparo',58.14,18.5,8,2644,26,105,'Desierto','Extinto en estado silvestre',23.7
+300,'Escorpión','Insecto',8,'Ovíparo',73.5,25.3,9,1759,31,100,'Desierto','En peligro',1522.1
+301,'Martinete','Ave',0,'Vivíparo',23.76,32.4,5,3485,38,144,'Océano','En peligro',2246.7
+302,'Tortuga','Reptil',6,'Vivíparo',73.74,22.0,6,39,19,134,'Montaña','Extinto en estado silvestre',4689.1
+303,'Caballito de Mar','Pez',0,'Vivíparo',85.05,26.1,8,3676,26,99,'Selva','Extinto en estado silvestre',1635.1
+304,'Gorrión','Ave',0,'Ovíparo',13.08,19.0,5,3968,15,170,'Océano','Extinto en estado silvestre',3915.7
+305,'Mantis Religiosa','Insecto',4,'Vivíparo',46.14,22.8,4,3545,33,143,'Desierto','Extinto en estado silvestre',2043.9
+306,'Escorpión','Insecto',8,'Ovíparo',73.84,38.7,8,3936,23,53,'Océano','En peligro',492.5
+307,'León','Mamífero',6,'Ovíparo',111.22,16.4,3,3059,18,112,'Desierto','En peligro',494.3
+308,'Chinchilla','Mamífero',0,'Vivíparo',107.03,39.7,6,2353,33,71,'Desierto','En peligro',2162.2
+309,'Tiburón','Pez',2,'Vivíparo',21.19,16.5,9,1769,38,106,'Océano','En peligro',289.5
+310,'Iguana','Reptil',2,'Ovíparo',73.65,19.6,6,2090,14,53,'Montaña','En peligro',2858.1
+311,'Zebra','Mamífero',8,'Ovíparo',12.66,12.6,9,1007,32,97,'Océano','En peligro',2468.3
+312,'Pulpo','Insecto',0,'Ovíparo',35.97,32.6,8,4027,31,55,'Desierto','Extinto en estado silvestre',3512.7
+313,'Búho','Ave',8,'Ovíparo',72.08,10.5,9,3988,34,164,'Selva','En peligro',928.2
+314,'Cocodrilo','Reptil',0,'Vivíparo',10.68,33.6,9,2624,29,120,'Montaña','Extinto en estado silvestre',2964.7
+315,'Caballito de Mar','Pez',6,'Ovíparo',106.77,27.3,8,1617,17,134,'Montaña','Extinto en estado silvestre',872.7
+316,'Albatros','Ave',2,'Ovíparo',99.65,32.5,9,148,37,69,'Selva','En peligro',3611.2
+317,'Pez Globo','Pez',4,'Ovíparo',57.33,33.5,7,2118,36,63,'Montaña','Extinto en estado silvestre',1535.9
+318,'Martinete','Ave',8,'Vivíparo',59.52,13.7,7,2368,34,166,'Desierto','En peligro',3072.1
+319,'Cacatúa','Ave',6,'Ovíparo',105.88,10.6,4,3862,25,120,'Océano','Vulnerable',4413.4
+320,'Tortuga','Reptil',2,'Ovíparo',7.0,15.1,1,5722,16,144,'Desierto','Extinto en estado silvestre',2441.2
+321,'Pez Payaso','Pez',6,'Ovíparo',18.12,21.5,7,2491,37,107,'Montaña','Vulnerable',961.5
+322,'Zebra','Mamífero',4,'Ovíparo',37.65,12.2,8,1921,32,50,'Selva','Extinto en estado silvestre',4430.6
+323,'Flamenco','Ave',0,'Ovíparo',44.36,23.7,9,2814,11,132,'Montaña','En peligro',1793.0
+324,'Flamenco','Ave',0,'Vivíparo',118.51,18.6,1,5281,18,67,'Desierto','En peligro',3651.3
+325,'Canguro','Mamífero',6,'Ovíparo',18.55,20.9,9,1807,37,142,'Montaña','En peligro',1600.5
+326,'Tortuga','Reptil',6,'Vivíparo',37.07,38.2,7,5479,30,115,'Montaña','En peligro',1491.1
+327,'Tortuga','Reptil',8,'Vivíparo',99.53,31.7,7,457,19,116,'Desierto','Extinto en estado silvestre',3210.2
+328,'Serpiente','Reptil',6,'Ovíparo',94.34,29.7,3,1875,28,176,'Montaña','En peligro',781.6
+329,'Mantis Religiosa','Insecto',0,'Ovíparo',78.92,29.6,1,687,13,137,'Desierto','Vulnerable',4334.9
+330,'Abeja','Insecto',6,'Vivíparo',40.1,26.7,7,4888,22,58,'Selva','Extinto en estado silvestre',1938.2
+331,'Serpiente','Reptil',2,'Vivíparo',15.02,25.4,8,1219,35,156,'Montaña','Vulnerable',96.5
+332,'Iguana','Reptil',2,'Vivíparo',118.04,36.5,6,4187,11,97,'Selva','En peligro',1527.3
+333,'Chinchilla','Mamífero',0,'Vivíparo',30.92,12.3,7,2286,28,175,'Océano','En peligro',3924.9
+334,'Escorpión','Insecto',6,'Vivíparo',101.51,18.7,9,1094,15,109,'Montaña','En peligro',4296.8
+335,'Pez Espada','Pez',6,'Ovíparo',107.51,13.1,8,5001,25,127,'Océano','Extinto en estado silvestre',2839.4
+336,'Cocodrilo','Reptil',6,'Ovíparo',53.47,10.3,5,3546,24,175,'Selva','Vulnerable',1470.6
+337,'Serpiente','Reptil',2,'Ovíparo',102.25,10.4,4,3618,23,167,'Selva','En peligro',2639.3
+338,'Tortuga','Reptil',0,'Vivíparo',34.21,10.7,4,2966,22,92,'Desierto','En peligro',4181.9
+339,'Gorrión','Ave',8,'Ovíparo',106.9,30.5,4,4751,37,175,'Océano','En peligro',1580.3
+340,'Estrella de Mar','Insecto',2,'Ovíparo',76.68,13.3,2,4403,26,99,'Océano','Extinto en estado silvestre',1927.2
+341,'Caballito de Mar','Pez',0,'Vivíparo',24.13,16.1,7,2714,27,156,'Desierto','Extinto en estado silvestre',2698.5
+342,'Águila','Ave',0,'Ovíparo',94.6,22.6,8,3773,29,137,'Océano','En peligro',4435.7
+343,'Flamenco','Ave',8,'Vivíparo',109.73,18.1,7,773,10,63,'Selva','Vulnerable',2910.8
+344,'Pez Globo','Pez',4,'Vivíparo',68.88,34.5,8,1126,31,67,'Selva','En peligro',1038.2
+345,'Pez Payaso','Pez',8,'Vivíparo',91.48,28.7,9,4375,37,126,'Selva','Extinto en estado silvestre',445.6
+346,'Caballito de Mar','Pez',8,'Ovíparo',95.58,20.0,8,2802,13,83,'Selva','En peligro',475.2
+347,'Pez Globo','Pez',0,'Vivíparo',94.7,19.5,5,2646,25,132,'Montaña','Vulnerable',4751.3
+348,'Caballito de Mar','Pez',4,'Ovíparo',55.08,30.5,4,2758,27,90,'Desierto','Extinto en estado silvestre',4112.1
+349,'Serpiente','Reptil',4,'Vivíparo',89.05,15.1,5,4700,19,168,'Montaña','Vulnerable',3829.3
+350,'Pez Globo','Pez',6,'Ovíparo',66.28,18.4,1,1204,29,124,'Montaña','Vulnerable',2481.9
+351,'Caballito de Mar','Pez',8,'Vivíparo',50.34,20.6,5,5790,37,176,'Océano','En peligro',3362.7
+352,'Avispa','Insecto',8,'Ovíparo',20.73,23.6,6,2082,17,118,'Desierto','Extinto en estado silvestre',636.7
+353,'Cocodrilo','Reptil',4,'Vivíparo',109.18,15.7,9,1529,15,97,'Montaña','Extinto en estado silvestre',3104.5
+354,'Gorrión','Ave',4,'Ovíparo',50.37,14.7,9,609,36,61,'Montaña','Extinto en estado silvestre',4053.9
+355,'Cocodrilo','Reptil',4,'Ovíparo',29.51,39.7,3,3730,26,162,'Desierto','Vulnerable',310.8
+356,'Chinchilla','Mamífero',0,'Ovíparo',29.83,37.4,8,4573,38,63,'Selva','Extinto en estado silvestre',1480.8
+357,'Pez Espada','Pez',0,'Vivíparo',29.81,25.7,8,1746,14,113,'Desierto','Vulnerable',551.5
+358,'Suricata','Ave',0,'Vivíparo',1.29,33.0,9,465,36,75,'Desierto','Extinto en estado silvestre',1301.2
+359,'Panda','Mamífero',8,'Ovíparo',53.15,30.2,1,2432,31,104,'Desierto','En peligro',3862.6
+360,'Cacatúa','Ave',4,'Ovíparo',106.99,12.3,5,3193,13,108,'Selva','Vulnerable',1660.3
+361,'Serpiente','Reptil',0,'Ovíparo',3.99,25.5,5,1332,13,128,'Desierto','En peligro',3448.5
+362,'Oso Pardo','Mamífero',6,'Vivíparo',114.84,15.5,7,1149,28,117,'Selva','En peligro',3866.5
+363,'Pez Globo','Pez',4,'Ovíparo',22.32,27.5,8,3576,38,179,'Montaña','En peligro',4083.2
+364,'Pez Payaso','Pez',4,'Vivíparo',86.55,11.9,7,3775,35,121,'Montaña','En peligro',4366.9
+365,'Gato','Mamífero',4,'Ovíparo',94.45,14.9,6,1959,35,97,'Selva','Vulnerable',2988.2
+366,'Serpiente','Reptil',0,'Vivíparo',88.48,33.5,4,5181,31,54,'Océano','Extinto en estado silvestre',1403.3
+367,'Tigre','Mamífero',2,'Ovíparo',41.36,35.3,9,3126,37,70,'Desierto','Vulnerable',752.9
+368,'Iguana','Reptil',6,'Vivíparo',84.75,37.2,2,5467,18,156,'Montaña','En peligro',2518.6
+369,'Pájaro Carpintero','Ave',6,'Vivíparo',57.28,36.9,6,2421,22,120,'Montaña','En peligro',517.9
+370,'Cocodrilo','Reptil',2,'Ovíparo',19.11,37.2,6,3594,16,143,'Selva','Extinto en estado silvestre',4553.6
+371,'Rinoceronte','Mamífero',6,'Ovíparo',24.91,12.8,4,239,34,143,'Océano','En peligro',2212.5
+372,'Jirafa','Mamífero',0,'Ovíparo',4.1,29.8,3,819,37,122,'Océano','Vulnerable',4364.9
+373,'Pájaro Carpintero','Ave',4,'Ovíparo',40.5,31.0,3,3295,39,51,'Océano','Vulnerable',3546.4
+374,'Tigre de Bengala','Mamífero',2,'Ovíparo',87.63,18.0,2,2585,31,140,'Selva','Vulnerable',4286.1
+375,'Camarón','Insecto',4,'Vivíparo',116.32,39.8,3,5961,38,89,'Selva','Vulnerable',4419.8
+376,'Tigre de Bengala','Mamífero',6,'Vivíparo',16.89,18.6,4,4950,27,85,'Desierto','En peligro',266.6
+377,'Escorpión','Insecto',8,'Vivíparo',43.04,27.2,4,47,31,150,'Montaña','Extinto en estado silvestre',3626.3
+378,'Rinoceronte','Mamífero',6,'Ovíparo',22.6,36.2,7,812,32,67,'Montaña','Vulnerable',1132.8
+379,'Delfín','Mamífero',6,'Vivíparo',91.55,18.7,4,4582,27,164,'Selva','En peligro',4946.5
+380,'Albatros','Ave',2,'Ovíparo',110.43,28.2,9,3007,39,55,'Montaña','Vulnerable',3892.0
+381,'Libélula','Insecto',4,'Vivíparo',14.57,31.6,8,1613,26,116,'Desierto','Extinto en estado silvestre',18.9
+382,'Gaviota','Ave',2,'Vivíparo',108.53,28.8,1,5640,38,174,'Selva','En peligro',4637.1
+383,'Mariposa Monarca','Insecto',0,'Ovíparo',33.31,22.2,1,5366,31,101,'Montaña','Vulnerable',1461.6
+384,'Escorpión','Insecto',4,'Ovíparo',27.54,38.3,6,5224,37,52,'Océano','Extinto en estado silvestre',2083.3
+385,'Pez Payaso','Pez',0,'Ovíparo',7.74,28.4,4,5633,17,176,'Selva','En peligro',3061.5
+386,'Caracol','Insecto',0,'Vivíparo',10.58,16.7,6,4983,20,115,'Montaña','En peligro',4581.6
+387,'Martinete','Ave',2,'Vivíparo',9.24,34.2,9,1482,15,71,'Montaña','Vulnerable',4636.6
+388,'Martinete','Ave',6,'Vivíparo',54.12,29.7,5,5491,17,162,'Desierto','En peligro',2817.4
+389,'Tortuga','Reptil',8,'Ovíparo',79.38,13.3,8,5901,31,102,'Desierto','En peligro',1583.7
+390,'Zebra','Mamífero',6,'Vivíparo',22.95,18.3,2,34,31,125,'Océano','Vulnerable',1396.0
+391,'Tiburón','Pez',6,'Vivíparo',26.9,14.7,8,1599,39,84,'Océano','Vulnerable',1822.0
+392,'León','Mamífero',4,'Vivíparo',21.57,12.2,8,5737,17,92,'Océano','En peligro',902.7
+393,'Flamenco','Ave',2,'Ovíparo',96.98,16.9,2,5363,28,94,'Desierto','Vulnerable',3349.2
+394,'Tiburón','Pez',4,'Vivíparo',17.32,18.3,7,2912,24,170,'Montaña','Vulnerable',2639.1
+395,'Avispa','Insecto',8,'Vivíparo',9.74,24.0,8,1544,28,113,'Selva','En peligro',3867.3
+396,'Martinete','Ave',2,'Vivíparo',5.37,39.1,7,5674,15,64,'Selva','Vulnerable',470.6
+397,'Suricata','Ave',6,'Vivíparo',5.78,38.3,6,5897,13,93,'Desierto','Extinto en estado silvestre',1999.6
+398,'Pájaro Carpintero','Ave',0,'Ovíparo',66.05,32.6,3,3768,32,91,'Desierto','En peligro',1199.4
+399,'Albatros','Ave',6,'Vivíparo',12.18,29.4,3,4640,36,134,'Desierto','En peligro',2676.0
+400,'Pez Espada','Pez',6,'Ovíparo',27.47,38.4,8,5612,16,53,'Desierto','Extinto en estado silvestre',2341.3
+401,'Jirafa','Mamífero',2,'Vivíparo',100.09,14.3,4,904,34,120,'Selva','Vulnerable',2247.9
+402,'Oso Pardo','Mamífero',6,'Ovíparo',116.2,19.9,8,1589,11,78,'Océano','Vulnerable',1578.3
+403,'Estrella de Mar','Insecto',8,'Vivíparo',103.44,26.6,6,3340,36,55,'Selva','Vulnerable',3634.3
+404,'Flamenco','Ave',6,'Ovíparo',115.19,34.4,3,151,11,130,'Desierto','En peligro',2407.9
+405,'Cacatúa','Ave',0,'Vivíparo',80.78,28.7,2,5431,31,142,'Océano','Vulnerable',1011.3
+406,'Rinoceronte','Mamífero',2,'Vivíparo',118.48,34.3,1,5695,23,163,'Selva','Vulnerable',2737.3
+407,'Camarón','Insecto',8,'Vivíparo',60.06,14.6,4,59,18,152,'Desierto','En peligro',2983.4
+408,'Cocodrilo','Reptil',2,'Vivíparo',95.57,15.8,8,2326,38,81,'Desierto','En peligro',107.0
+409,'Caballito de Mar','Pez',0,'Ovíparo',116.63,32.2,4,3738,16,163,'Montaña','Vulnerable',1019.0
+410,'Jirafa','Mamífero',4,'Ovíparo',85.41,20.4,8,3691,31,136,'Montaña','Extinto en estado silvestre',1212.1
+411,'Pez Payaso','Pez',8,'Ovíparo',114.85,23.1,8,4412,14,100,'Desierto','En peligro',1240.5
+412,'Orangután','Mamífero',0,'Vivíparo',31.18,33.7,1,3371,33,89,'Selva','Extinto en estado silvestre',1194.3
+413,'Mariposa Monarca','Insecto',4,'Ovíparo',36.73,12.1,6,2969,21,50,'Montaña','Extinto en estado silvestre',1358.3
+414,'Gaviota','Ave',0,'Vivíparo',48.27,15.0,8,2007,27,55,'Selva','En peligro',1313.7
+415,'Serpiente','Reptil',4,'Ovíparo',56.29,18.9,8,5980,37,144,'Selva','Extinto en estado silvestre',4420.4
+416,'Pez Espada','Pez',4,'Vivíparo',107.79,36.5,1,1135,28,174,'Montaña','Vulnerable',1598.3
+417,'Tortuga','Reptil',2,'Vivíparo',106.66,22.1,8,4036,25,65,'Desierto','Extinto en estado silvestre',1748.9
+418,'Pájaro Carpintero','Ave',6,'Vivíparo',79.3,17.6,9,2967,21,121,'Montaña','Vulnerable',1331.0
+419,'Chinchilla','Mamífero',6,'Vivíparo',28.64,30.4,6,4040,15,98,'Selva','En peligro',4837.9
+420,'Libélula','Insecto',0,'Vivíparo',29.6,10.9,7,2554,10,156,'Océano','Vulnerable',2677.5
+421,'Gorrión','Ave',4,'Ovíparo',76.18,33.3,6,5961,21,88,'Montaña','En peligro',3052.8
+422,'Serpiente','Reptil',6,'Vivíparo',60.9,30.9,5,3068,33,107,'Océano','Extinto en estado silvestre',3677.5
+423,'Serpiente','Reptil',0,'Ovíparo',31.77,11.7,1,3806,39,94,'Desierto','En peligro',1668.6
+424,'Serpiente','Reptil',0,'Ovíparo',21.02,24.9,2,5826,20,77,'Montaña','Vulnerable',4843.9
+425,'Canguro','Mamífero',8,'Vivíparo',86.99,22.1,2,1716,20,138,'Océano','En peligro',761.7
+426,'Iguana','Reptil',2,'Vivíparo',97.77,14.7,9,5530,18,141,'Desierto','Extinto en estado silvestre',2289.1
+427,'Tigre','Mamífero',2,'Ovíparo',32.1,14.6,6,5376,11,122,'Selva','Extinto en estado silvestre',727.3
+428,'Serpiente','Reptil',4,'Ovíparo',51.57,14.8,3,1487,38,54,'Desierto','Vulnerable',3951.9
+429,'Pez Payaso','Pez',6,'Vivíparo',85.91,28.0,3,738,34,106,'Desierto','Vulnerable',536.7
+430,'Pez Payaso','Pez',4,'Ovíparo',56.84,15.1,2,4814,30,129,'Selva','En peligro',2769.5
+431,'Gorrión','Ave',6,'Ovíparo',115.39,11.8,7,4321,17,78,'Desierto','Vulnerable',524.1
+432,'Flamenco','Ave',6,'Ovíparo',16.42,38.7,1,5642,10,104,'Montaña','En peligro',2263.4
+433,'Pulpo','Insecto',6,'Vivíparo',102.67,11.2,1,2440,10,106,'Desierto','Vulnerable',1401.6
+434,'Tortuga','Reptil',6,'Ovíparo',37.42,29.9,3,828,37,133,'Océano','Extinto en estado silvestre',4516.5
+435,'Serpiente','Reptil',6,'Vivíparo',82.76,38.1,1,87,21,99,'Desierto','Extinto en estado silvestre',265.6
+436,'Koala','Mamífero',8,'Ovíparo',31.19,11.1,3,5220,13,135,'Océano','Vulnerable',3249.7
+437,'Búho','Ave',8,'Ovíparo',116.01,39.0,9,2146,10,125,'Desierto','En peligro',3476.3
+438,'Pez Payaso','Pez',6,'Vivíparo',6.97,25.1,7,3605,21,57,'Montaña','Extinto en estado silvestre',4444.9
+439,'Zebra','Mamífero',0,'Vivíparo',62.11,33.6,9,5735,23,158,'Selva','En peligro',4388.7
+440,'Pez Payaso','Pez',0,'Vivíparo',109.35,28.8,7,2533,10,82,'Selva','Extinto en estado silvestre',4885.3
+441,'Zebra','Mamífero',2,'Vivíparo',56.91,28.5,9,3142,21,151,'Océano','Vulnerable',1269.6
+442,'Flamenco','Ave',6,'Ovíparo',101.0,33.7,3,2475,14,170,'Desierto','Vulnerable',1374.2
+443,'Tortuga','Reptil',0,'Ovíparo',114.03,12.0,7,315,11,176,'Desierto','Vulnerable',1986.5
+444,'Cocodrilo','Reptil',2,'Ovíparo',9.07,21.8,6,476,13,143,'Montaña','Extinto en estado silvestre',2687.9
+445,'Búho','Ave',0,'Ovíparo',59.17,39.1,2,550,33,52,'Desierto','Vulnerable',1835.8
+446,'Pez Espada','Pez',2,'Ovíparo',82.68,11.6,6,2472,20,101,'Océano','Vulnerable',3701.5
+447,'Escorpión','Insecto',4,'Ovíparo',100.03,17.9,3,4482,31,93,'Océano','Vulnerable',42.8
+448,'Caracol','Insecto',0,'Ovíparo',20.42,30.2,2,964,27,109,'Montaña','En peligro',88.4
+449,'Flamenco','Ave',6,'Vivíparo',68.45,13.0,5,2186,28,107,'Océano','Vulnerable',3580.3
+450,'Tigre','Mamífero',6,'Ovíparo',20.39,26.1,5,4227,27,144,'Océano','En peligro',4415.6
+451,'Tortuga','Reptil',8,'Vivíparo',90.89,31.4,2,4512,29,68,'Montaña','En peligro',3882.8
+452,'Pez Payaso','Pez',4,'Ovíparo',34.87,32.7,3,556,24,54,'Océano','Extinto en estado silvestre',585.5
+453,'Pulpo','Insecto',4,'Ovíparo',32.99,26.8,8,3475,30,172,'Océano','Vulnerable',4674.9
+454,'Tortuga','Reptil',0,'Ovíparo',92.61,25.0,5,5433,37,75,'Selva','Extinto en estado silvestre',2609.6
+455,'Martinete','Ave',2,'Ovíparo',101.2,31.4,8,1330,39,163,'Montaña','Vulnerable',3711.5
+456,'Serpiente','Reptil',8,'Vivíparo',41.86,14.4,4,3910,24,157,'Selva','En peligro',1005.3
+457,'Abeja','Insecto',4,'Ovíparo',60.63,30.4,4,1443,18,67,'Desierto','Extinto en estado silvestre',2744.0
+458,'Pez Espada','Pez',4,'Ovíparo',83.52,37.6,6,4273,32,58,'Montaña','En peligro',1650.4
+459,'León','Mamífero',6,'Ovíparo',89.68,30.5,5,2378,17,139,'Desierto','Vulnerable',4873.8
+460,'Nutria','Mamífero',6,'Ovíparo',92.64,11.4,5,3575,32,179,'Océano','Extinto en estado silvestre',2371.0
+461,'Cocodrilo','Reptil',2,'Ovíparo',47.46,25.2,9,2735,36,171,'Selva','Vulnerable',3777.9
+462,'Oso Pardo','Mamífero',0,'Ovíparo',64.82,31.8,6,3612,19,91,'Océano','Extinto en estado silvestre',3016.2
+463,'Libélula','Insecto',2,'Vivíparo',14.04,11.3,3,3369,17,158,'Selva','Vulnerable',471.6
+464,'Pez Espada','Pez',0,'Vivíparo',113.88,32.9,4,3681,38,119,'Selva','En peligro',2714.7
+465,'Hipopótamo','Mamífero',8,'Vivíparo',84.47,18.4,9,3258,20,133,'Selva','En peligro',2701.1
+466,'Jirafa','Mamífero',4,'Vivíparo',45.69,27.7,6,950,30,121,'Selva','Extinto en estado silvestre',3578.6
+467,'Flamenco','Ave',2,'Vivíparo',47.36,39.0,8,2935,28,158,'Océano','Vulnerable',1609.6
+468,'Koala','Mamífero',0,'Vivíparo',11.77,39.8,7,3913,21,117,'Océano','Vulnerable',4303.3
+469,'Oso Pardo','Mamífero',8,'Vivíparo',55.37,29.0,1,2498,16,138,'Océano','En peligro',3113.1
+470,'Abeja','Insecto',2,'Ovíparo',81.09,24.7,1,1759,39,80,'Selva','Extinto en estado silvestre',196.8
+471,'Oso Pardo','Mamífero',4,'Vivíparo',114.35,15.3,7,4715,10,171,'Desierto','Vulnerable',3534.2
+472,'Gaviota','Ave',8,'Vivíparo',78.06,16.3,2,5203,12,68,'Océano','Vulnerable',4534.8
+473,'Suricata','Ave',6,'Vivíparo',78.43,22.9,9,4987,32,120,'Océano','En peligro',3415.8
+474,'Martinete','Ave',4,'Vivíparo',94.58,31.1,9,5377,22,86,'Montaña','Vulnerable',1900.0
+475,'Elefante','Mamífero',6,'Ovíparo',61.67,33.1,2,5767,13,143,'Desierto','En peligro',2953.3
+476,'Cocodrilo','Reptil',8,'Vivíparo',4.82,16.7,9,2161,32,68,'Océano','Extinto en estado silvestre',857.1
+477,'Tortuga','Reptil',8,'Vivíparo',106.89,26.1,9,2687,35,142,'Océano','Vulnerable',3006.3
+478,'Pulpo','Insecto',6,'Vivíparo',48.89,27.7,6,2698,19,102,'Montaña','Vulnerable',2505.0
+479,'Serpiente','Reptil',0,'Vivíparo',118.18,36.8,5,3607,15,124,'Selva','En peligro',130.9
+480,'Caracol','Insecto',8,'Ovíparo',49.36,36.3,2,921,13,95,'Desierto','En peligro',1609.5
+481,'Pulpo','Insecto',2,'Ovíparo',80.53,34.5,6,4642,32,85,'Desierto','Vulnerable',956.3
+482,'Gaviota','Ave',2,'Vivíparo',55.72,25.5,9,4071,17,179,'Montaña','En peligro',1953.3
+483,'Pez Globo','Pez',8,'Ovíparo',28.66,12.0,3,3716,23,93,'Desierto','En peligro',1209.2
+484,'Estrella de Mar','Insecto',6,'Vivíparo',111.76,20.0,3,1934,33,140,'Océano','Extinto en estado silvestre',4171.3
+485,'Gorila','Mamífero',6,'Ovíparo',75.64,28.7,4,617,32,139,'Desierto','En peligro',3488.4
+486,'Pájaro Carpintero','Ave',4,'Ovíparo',54.61,29.1,4,2829,27,170,'Montaña','Vulnerable',3700.6
+487,'Panda','Mamífero',6,'Ovíparo',18.16,35.5,1,2468,17,157,'Selva','En peligro',1804.4
+488,'Nutria','Mamífero',0,'Ovíparo',119.89,21.4,2,1809,14,90,'Montaña','Vulnerable',17.3
+489,'Iguana','Reptil',0,'Vivíparo',107.52,38.1,6,971,23,171,'Desierto','Vulnerable',1095.8
+490,'Oso Pardo','Mamífero',2,'Ovíparo',51.31,14.9,5,1986,34,152,'Montaña','En peligro',3776.5
+491,'Escorpión','Insecto',8,'Vivíparo',21.4,11.5,4,1639,31,146,'Montaña','Vulnerable',3014.2
+492,'Panda','Mamífero',2,'Vivíparo',4.53,15.3,9,173,24,87,'Desierto','Extinto en estado silvestre',2692.9
+493,'Elefante','Mamífero',8,'Ovíparo',19.07,23.9,2,579,29,163,'Selva','Extinto en estado silvestre',1402.7
+494,'Iguana','Reptil',2,'Ovíparo',64.6,34.7,8,3573,34,60,'Océano','Vulnerable',378.8
+495,'Delfín','Mamífero',8,'Ovíparo',98.08,14.6,4,5688,26,127,'Montaña','Extinto en estado silvestre',3924.4
+496,'Libélula','Insecto',8,'Vivíparo',44.26,26.4,9,473,13,119,'Selva','En peligro',193.4
+497,'Mantis Religiosa','Insecto',2,'Vivíparo',52.64,33.3,4,5332,36,92,'Selva','En peligro',295.8
+498,'Delfín','Mamífero',4,'Ovíparo',57.32,11.0,2,5519,30,153,'Montaña','En peligro',1474.7
+499,'Libélula','Insecto',0,'Vivíparo',3.09,11.2,6,3901,29,138,'Desierto','Vulnerable',2864.7
+500,'Libélula','Insecto',6,'Ovíparo',22.07,24.7,9,2326,22,167,'Desierto','En peligro',4961.1
+501,'Iguana','Reptil',0,'Ovíparo',60.61,15.5,7,215,24,54,'Montaña','En peligro',453.3
+502,'Águila','Ave',6,'Ovíparo',34.25,23.5,1,4605,18,81,'Desierto','Vulnerable',2365.9
+503,'Águila','Ave',8,'Ovíparo',63.28,11.3,9,4690,26,96,'Desierto','Extinto en estado silvestre',3008.8
+504,'Pez Espada','Pez',2,'Vivíparo',13.86,39.3,6,3122,12,139,'Selva','En peligro',4115.5
+505,'Martinete','Ave',2,'Ovíparo',96.54,29.6,9,768,18,99,'Océano','Vulnerable',3448.1
+506,'Gorila','Mamífero',6,'Vivíparo',94.27,30.6,2,1100,37,148,'Océano','Extinto en estado silvestre',4038.7
+507,'Camarón','Insecto',2,'Vivíparo',80.71,25.3,7,4524,32,144,'Desierto','Extinto en estado silvestre',2612.4
+508,'Gorrión','Ave',2,'Vivíparo',64.24,34.7,8,1112,30,128,'Desierto','Extinto en estado silvestre',2169.9
+509,'Cocodrilo','Reptil',2,'Ovíparo',47.4,35.0,8,4857,20,107,'Montaña','En peligro',3093.7
+510,'Tiburón','Pez',0,'Vivíparo',82.24,14.8,5,2077,31,121,'Desierto','Extinto en estado silvestre',4504.4
+511,'León','Mamífero',2,'Ovíparo',94.04,33.1,7,1759,29,123,'Montaña','Extinto en estado silvestre',2754.3
+512,'Albatros','Ave',4,'Vivíparo',97.22,27.0,7,5277,30,151,'Océano','Extinto en estado silvestre',3028.0
+513,'Mariposa Monarca','Insecto',6,'Ovíparo',42.36,32.9,3,516,33,97,'Selva','En peligro',1689.9
+514,'Iguana','Reptil',0,'Ovíparo',24.08,37.6,2,3472,14,77,'Montaña','Vulnerable',2980.6
+515,'Flamenco','Ave',0,'Vivíparo',41.68,20.1,5,4143,35,163,'Selva','Extinto en estado silvestre',3138.9
+516,'Pulpo','Insecto',8,'Vivíparo',1.92,27.1,4,5472,27,69,'Océano','Vulnerable',3767.2
+517,'Suricata','Ave',8,'Vivíparo',51.36,33.6,8,1739,33,137,'Selva','Extinto en estado silvestre',2860.9
+518,'Hipopótamo','Mamífero',2,'Ovíparo',33.54,39.6,5,2328,21,119,'Océano','Extinto en estado silvestre',987.8
+519,'Pez Payaso','Pez',0,'Ovíparo',95.01,28.4,9,5619,28,90,'Selva','En peligro',2909.7
+520,'Mariposa Monarca','Insecto',0,'Ovíparo',81.3,31.6,7,274,14,161,'Selva','Extinto en estado silvestre',1489.4
+521,'Caballito de Mar','Pez',2,'Vivíparo',4.09,35.4,1,1082,38,145,'Desierto','Extinto en estado silvestre',436.7
+522,'Tiburón','Pez',6,'Ovíparo',18.17,32.5,2,2228,21,55,'Océano','Vulnerable',4127.2
+523,'Tortuga','Reptil',0,'Ovíparo',65.52,38.3,8,4566,36,79,'Montaña','En peligro',330.5
+524,'Camarón','Insecto',8,'Ovíparo',74.55,16.9,8,678,15,103,'Océano','Vulnerable',3158.6
+525,'Cocodrilo','Reptil',2,'Ovíparo',92.5,37.2,2,894,26,59,'Desierto','Vulnerable',4942.5
+526,'Caballito de Mar','Pez',0,'Vivíparo',116.23,16.2,7,3844,23,68,'Montaña','Vulnerable',438.2
+527,'Zebra','Mamífero',8,'Ovíparo',84.53,27.0,8,1447,12,58,'Desierto','Vulnerable',1100.7
+528,'Oso Pardo','Mamífero',4,'Vivíparo',65.84,25.7,4,99,10,110,'Océano','En peligro',3804.0
+529,'Águila','Ave',0,'Ovíparo',50.32,34.9,3,3973,32,63,'Océano','Extinto en estado silvestre',484.6
+530,'Búho','Ave',2,'Ovíparo',88.84,22.0,9,3907,22,51,'Desierto','En peligro',4163.6
+531,'Pulpo','Insecto',8,'Ovíparo',112.24,14.3,2,4631,27,94,'Montaña','Extinto en estado silvestre',1.5
+532,'Perro','Mamífero',0,'Vivíparo',51.33,31.2,3,5778,19,69,'Océano','Extinto en estado silvestre',4449.7
+533,'Pez Payaso','Pez',8,'Ovíparo',70.57,28.2,8,5434,32,75,'Desierto','Vulnerable',334.2
+534,'Rinoceronte','Mamífero',2,'Vivíparo',25.64,34.8,2,5436,37,88,'Océano','Extinto en estado silvestre',4609.9
+535,'Avispa','Insecto',0,'Ovíparo',103.04,32.8,5,31,39,165,'Desierto','En peligro',4322.8
+536,'Cacatúa','Ave',2,'Vivíparo',85.91,36.8,8,1580,28,174,'Océano','Extinto en estado silvestre',2697.9
+537,'Gaviota','Ave',6,'Ovíparo',43.21,35.2,7,2466,28,74,'Océano','En peligro',3889.8
+538,'Tortuga','Reptil',0,'Vivíparo',105.01,30.6,4,3509,26,149,'Selva','En peligro',374.5
+539,'Suricata','Ave',0,'Vivíparo',116.53,24.0,9,4839,16,112,'Montaña','En peligro',675.8
+540,'Pez Payaso','Pez',8,'Ovíparo',35.33,10.6,2,1001,37,164,'Océano','Extinto en estado silvestre',1846.5
+541,'Avispa','Insecto',0,'Ovíparo',23.21,19.2,7,3201,17,96,'Montaña','Vulnerable',2687.3
+542,'Pájaro Carpintero','Ave',6,'Vivíparo',100.0,31.8,7,4832,25,72,'Desierto','En peligro',4341.1
+543,'Flamenco','Ave',8,'Ovíparo',70.31,11.8,7,3017,25,65,'Selva','Vulnerable',2713.4
+544,'Caballito de Mar','Pez',8,'Ovíparo',106.24,32.7,7,1836,36,55,'Desierto','En peligro',3326.1
+545,'Búho','Ave',4,'Ovíparo',42.35,25.5,5,672,25,78,'Montaña','Extinto en estado silvestre',3399.5
+546,'Pez Payaso','Pez',0,'Vivíparo',70.17,36.0,1,5112,29,53,'Desierto','En peligro',4387.9
+547,'Flamenco','Ave',4,'Vivíparo',69.69,29.8,4,1955,18,163,'Desierto','Extinto en estado silvestre',3883.8
+548,'Pez Payaso','Pez',6,'Ovíparo',23.4,34.0,5,4676,39,57,'Desierto','Extinto en estado silvestre',4885.2
+549,'Suricata','Ave',0,'Ovíparo',119.04,15.1,4,4303,22,97,'Montaña','Extinto en estado silvestre',100.2
+550,'Abeja','Insecto',4,'Vivíparo',80.02,15.2,7,5318,13,133,'Océano','Extinto en estado silvestre',1039.2
+551,'Tortuga','Reptil',4,'Ovíparo',80.03,16.3,2,3315,19,65,'Desierto','Vulnerable',4652.2
+552,'Iguana','Reptil',8,'Ovíparo',36.33,20.0,2,3960,30,96,'Montaña','Extinto en estado silvestre',3961.1
+553,'Perro','Mamífero',4,'Vivíparo',78.4,37.1,2,4074,36,80,'Selva','En peligro',1336.9
+554,'Cocodrilo','Reptil',4,'Ovíparo',100.12,33.2,3,1584,31,145,'Selva','Vulnerable',4871.2
+555,'Tiburón','Pez',0,'Vivíparo',97.81,20.9,5,25,18,171,'Montaña','Vulnerable',4349.4
+556,'Pez Espada','Pez',0,'Ovíparo',110.45,37.6,9,5610,34,78,'Desierto','Vulnerable',323.4
+557,'Tortuga','Reptil',8,'Vivíparo',18.69,33.4,3,4606,33,125,'Océano','Vulnerable',4056.6
+558,'Tiburón','Pez',0,'Vivíparo',22.76,29.7,6,5458,35,117,'Selva','En peligro',3922.5
+559,'Mariposa Monarca','Insecto',6,'Ovíparo',85.51,23.1,6,2020,37,168,'Océano','Extinto en estado silvestre',1105.8
+560,'Pez Payaso','Pez',8,'Vivíparo',97.12,29.5,6,210,27,83,'Montaña','En peligro',3346.3
+561,'Estrella de Mar','Insecto',6,'Ovíparo',81.24,27.8,5,3178,21,55,'Selva','Extinto en estado silvestre',4851.1
+562,'Avispa','Insecto',0,'Vivíparo',18.0,33.5,2,854,35,98,'Desierto','Vulnerable',3379.4
+563,'Escorpión','Insecto',0,'Vivíparo',71.8,16.8,1,833,19,100,'Selva','Vulnerable',4068.8
+564,'Búho','Ave',8,'Ovíparo',90.06,36.6,5,316,26,58,'Desierto','Vulnerable',497.0
+565,'Perro','Mamífero',4,'Ovíparo',17.3,27.8,8,4417,21,159,'Océano','Vulnerable',3637.3
+566,'Caballito de Mar','Pez',2,'Vivíparo',7.64,34.2,5,4319,11,65,'Selva','Extinto en estado silvestre',1023.9
+567,'Pájaro Carpintero','Ave',2,'Ovíparo',31.32,20.4,3,2666,23,133,'Montaña','Vulnerable',359.4
+568,'Jirafa','Mamífero',0,'Vivíparo',11.8,21.8,3,1085,15,177,'Selva','Extinto en estado silvestre',2760.4
+569,'Gorrión','Ave',6,'Vivíparo',18.68,38.1,2,5132,20,141,'Desierto','Vulnerable',3753.1
+570,'Pez Espada','Pez',8,'Vivíparo',25.2,28.7,7,3863,23,84,'Océano','En peligro',2733.8
+571,'Estrella de Mar','Insecto',4,'Ovíparo',64.15,19.5,2,3052,32,111,'Montaña','Vulnerable',4658.0
+572,'Búho','Ave',0,'Vivíparo',19.55,12.5,6,4960,23,82,'Desierto','Extinto en estado silvestre',3478.4
+573,'Nutria','Mamífero',6,'Ovíparo',72.96,23.0,8,4026,15,134,'Desierto','Extinto en estado silvestre',588.0
+574,'Hipopótamo','Mamífero',0,'Vivíparo',35.59,35.5,8,588,10,155,'Montaña','En peligro',4672.6
+575,'Canguro','Mamífero',2,'Vivíparo',37.96,17.5,2,677,26,172,'Montaña','Extinto en estado silvestre',764.5
+576,'Gaviota','Ave',0,'Ovíparo',116.12,35.8,6,1849,26,164,'Océano','En peligro',3791.3
+577,'Orangután','Mamífero',6,'Ovíparo',96.81,14.8,3,4765,26,166,'Desierto','Vulnerable',742.8
+578,'Tortuga','Reptil',2,'Ovíparo',51.47,13.9,9,1309,19,150,'Desierto','Vulnerable',4992.9
+579,'Lobo','Mamífero',0,'Vivíparo',54.25,28.2,3,1590,39,129,'Océano','Vulnerable',1661.0
+580,'Jirafa','Mamífero',2,'Vivíparo',14.66,34.1,1,3245,19,158,'Selva','Extinto en estado silvestre',2479.7
+581,'Albatros','Ave',8,'Ovíparo',101.5,33.4,9,4261,23,144,'Montaña','Vulnerable',2334.2
+582,'Pez Espada','Pez',6,'Ovíparo',1.47,26.3,8,2596,10,57,'Océano','Vulnerable',509.6
+583,'Flamenco','Ave',6,'Ovíparo',18.19,29.2,2,5942,11,137,'Montaña','Vulnerable',2470.1
+584,'Albatros','Ave',8,'Vivíparo',64.55,17.7,3,1395,27,108,'Océano','Vulnerable',747.6
+585,'Cocodrilo','Reptil',6,'Vivíparo',23.42,26.5,7,3973,29,130,'Océano','Vulnerable',4009.9
+586,'Caballito de Mar','Pez',6,'Vivíparo',76.3,16.2,6,836,12,109,'Desierto','Extinto en estado silvestre',4791.6
+587,'Gorrión','Ave',0,'Ovíparo',1.43,37.9,8,1065,13,101,'Montaña','Extinto en estado silvestre',4040.3
+588,'Iguana','Reptil',4,'Vivíparo',12.71,30.3,5,5374,14,125,'Océano','Extinto en estado silvestre',2155.4
+589,'Gorrión','Ave',0,'Ovíparo',92.0,26.9,5,4160,29,169,'Desierto','Extinto en estado silvestre',12.0
+590,'Tortuga','Reptil',8,'Ovíparo',69.61,17.4,2,3045,12,85,'Océano','Vulnerable',183.3
+591,'Camarón','Insecto',8,'Ovíparo',3.32,22.3,6,4431,12,126,'Montaña','Extinto en estado silvestre',2475.2
+592,'Zebra','Mamífero',4,'Vivíparo',25.49,33.4,5,4061,13,148,'Océano','En peligro',3397.5
+593,'Elefante','Mamífero',0,'Vivíparo',29.44,17.2,9,4701,15,118,'Desierto','Vulnerable',4097.6
+594,'Martinete','Ave',0,'Vivíparo',102.04,13.9,3,5129,16,60,'Desierto','Vulnerable',2997.7
+595,'Tortuga','Reptil',0,'Ovíparo',70.32,19.2,5,1959,13,57,'Selva','En peligro',4891.6
+596,'Abeja','Insecto',2,'Vivíparo',65.43,33.8,3,1715,33,111,'Montaña','Extinto en estado silvestre',2468.9
+597,'Gorila','Mamífero',2,'Vivíparo',11.32,36.5,9,4887,24,126,'Selva','En peligro',3000.2
+598,'Águila','Ave',0,'Ovíparo',79.18,22.4,9,20,15,154,'Desierto','Extinto en estado silvestre',1150.6
+599,'Suricata','Ave',2,'Ovíparo',19.55,33.4,7,2227,14,135,'Selva','En peligro',1698.4
+600,'Tortuga','Reptil',0,'Ovíparo',63.09,20.0,1,2406,17,159,'Montaña','Vulnerable',3415.7
+601,'Tiburón','Pez',8,'Vivíparo',71.52,25.3,9,132,15,107,'Desierto','Extinto en estado silvestre',3008.2
+602,'Martinete','Ave',0,'Ovíparo',101.18,10.6,9,675,26,137,'Selva','Extinto en estado silvestre',1848.3
+603,'Escorpión','Insecto',2,'Ovíparo',96.97,31.4,5,626,25,57,'Selva','Extinto en estado silvestre',560.0
+604,'Pulpo','Insecto',4,'Vivíparo',23.62,31.6,2,5097,20,156,'Desierto','Vulnerable',1713.1
+605,'Pez Espada','Pez',8,'Ovíparo',110.03,13.0,1,789,10,169,'Océano','Extinto en estado silvestre',220.9
+606,'Mantis Religiosa','Insecto',6,'Ovíparo',1.33,20.8,2,5511,23,113,'Desierto','En peligro',2903.9
+607,'Tortuga','Reptil',4,'Vivíparo',40.28,24.5,4,990,22,101,'Selva','Extinto en estado silvestre',1615.1
+608,'Albatros','Ave',4,'Ovíparo',8.9,33.2,4,3456,19,120,'Montaña','Extinto en estado silvestre',1899.3
+609,'Serpiente','Reptil',6,'Vivíparo',86.79,34.7,1,795,19,71,'Selva','Vulnerable',2875.5
+610,'Pez Espada','Pez',8,'Ovíparo',60.53,31.6,8,5406,31,128,'Desierto','En peligro',2906.5
+611,'Tiburón','Pez',6,'Vivíparo',21.82,16.5,8,4247,17,86,'Selva','En peligro',2941.8
+612,'Tortuga','Reptil',8,'Ovíparo',11.13,20.7,8,5576,18,144,'Desierto','En peligro',2458.0
+613,'Panda','Mamífero',8,'Ovíparo',27.9,17.4,5,1598,13,164,'Selva','Extinto en estado silvestre',2440.7
+614,'Pez Globo','Pez',8,'Vivíparo',110.57,29.1,2,3922,20,171,'Selva','Extinto en estado silvestre',4106.1
+615,'Flamenco','Ave',4,'Vivíparo',81.64,29.4,4,2032,32,107,'Océano','Vulnerable',2337.8
+616,'Tiburón','Pez',8,'Vivíparo',29.83,10.5,1,3160,18,52,'Desierto','Vulnerable',2680.2
+617,'Cocodrilo','Reptil',6,'Ovíparo',107.36,32.0,1,1713,21,126,'Océano','Extinto en estado silvestre',4941.2
+618,'Iguana','Reptil',4,'Ovíparo',17.24,16.9,3,329,22,124,'Océano','En peligro',905.3
+619,'Caracol','Insecto',8,'Ovíparo',82.92,34.0,4,3542,17,142,'Selva','En peligro',3632.1
+620,'Puma','Mamífero',2,'Vivíparo',51.56,35.0,3,1696,37,87,'Desierto','Extinto en estado silvestre',2366.0
+621,'Cocodrilo','Reptil',2,'Ovíparo',32.93,33.9,3,2090,22,170,'Montaña','En peligro',4152.7
+622,'Estrella de Mar','Insecto',8,'Vivíparo',32.21,22.2,8,1490,33,98,'Selva','En peligro',2020.2
+623,'Estrella de Mar','Insecto',2,'Ovíparo',60.6,20.4,4,3126,10,83,'Desierto','Extinto en estado silvestre',1515.0
+624,'Gaviota','Ave',0,'Vivíparo',111.85,23.1,3,1074,35,179,'Océano','Vulnerable',1039.0
+625,'Libélula','Insecto',4,'Vivíparo',89.34,25.8,9,3425,31,172,'Selva','Extinto en estado silvestre',4361.2
+626,'Orangután','Mamífero',0,'Vivíparo',79.79,17.5,1,676,20,105,'Montaña','Vulnerable',3591.7
+627,'Pájaro Carpintero','Ave',4,'Vivíparo',105.19,37.9,8,5694,34,149,'Selva','En peligro',384.6
+628,'Serpiente','Reptil',6,'Ovíparo',68.87,25.1,5,1272,33,165,'Océano','Vulnerable',3567.5
+629,'Cocodrilo','Reptil',2,'Vivíparo',23.84,12.2,8,1350,11,85,'Océano','Vulnerable',175.2
+630,'Libélula','Insecto',2,'Ovíparo',117.28,39.9,3,1130,14,75,'Desierto','Extinto en estado silvestre',908.2
+631,'Pez Globo','Pez',2,'Ovíparo',64.63,24.5,6,176,20,133,'Montaña','En peligro',2964.0
+632,'Delfín','Mamífero',8,'Vivíparo',38.52,38.4,7,4224,13,124,'Selva','En peligro',2317.6
+633,'Tigre de Bengala','Mamífero',4,'Vivíparo',93.6,21.7,8,4003,17,139,'Océano','En peligro',4202.4
+634,'Avispa','Insecto',8,'Ovíparo',56.22,16.7,7,3264,34,170,'Desierto','Vulnerable',3039.5
+635,'Gato','Mamífero',2,'Ovíparo',2.48,32.1,7,1117,21,148,'Montaña','Vulnerable',4824.9
+636,'Martinete','Ave',6,'Ovíparo',39.07,23.0,2,1457,12,118,'Montaña','Extinto en estado silvestre',4275.9
+637,'Camarón','Insecto',2,'Vivíparo',55.41,36.4,3,4191,34,65,'Desierto','En peligro',1701.1
+638,'Pez Globo','Pez',8,'Ovíparo',45.34,23.9,6,688,26,124,'Océano','En peligro',4170.8
+639,'Tortuga','Reptil',2,'Ovíparo',66.66,20.2,3,5074,32,146,'Montaña','Vulnerable',4349.7
+640,'Elefante','Mamífero',0,'Ovíparo',22.82,39.0,9,1582,17,54,'Selva','Vulnerable',4848.6
+641,'Iguana','Reptil',0,'Ovíparo',69.12,34.9,9,1801,15,169,'Océano','Vulnerable',62.9
+642,'Pez Espada','Pez',8,'Ovíparo',118.4,16.2,6,1323,13,92,'Océano','En peligro',4373.7
+643,'Pez Payaso','Pez',0,'Ovíparo',90.7,24.7,1,1775,13,147,'Desierto','En peligro',349.6
+644,'Águila','Ave',4,'Vivíparo',82.46,13.4,1,4907,16,79,'Montaña','Extinto en estado silvestre',2640.6
+645,'Pez Espada','Pez',4,'Vivíparo',24.87,13.2,4,3808,19,123,'Desierto','Extinto en estado silvestre',2073.4
+646,'Caballito de Mar','Pez',8,'Vivíparo',70.23,35.6,8,364,15,177,'Montaña','En peligro',4599.4
+647,'Lobo','Mamífero',0,'Vivíparo',98.54,38.0,3,515,13,81,'Desierto','Extinto en estado silvestre',2025.8
+648,'Iguana','Reptil',4,'Vivíparo',29.64,32.2,4,575,30,66,'Océano','Vulnerable',2980.3
+649,'Tigre de Bengala','Mamífero',0,'Ovíparo',11.33,39.7,6,4917,19,157,'Desierto','Extinto en estado silvestre',3459.4
+650,'Lobo','Mamífero',2,'Vivíparo',79.75,11.4,9,3954,29,116,'Océano','Vulnerable',95.2
+651,'Caracol','Insecto',0,'Ovíparo',81.16,19.9,4,4776,26,176,'Océano','Extinto en estado silvestre',2954.7
+652,'Estrella de Mar','Insecto',0,'Vivíparo',96.72,14.0,3,541,29,61,'Desierto','En peligro',2590.0
+653,'Albatros','Ave',8,'Vivíparo',75.92,33.5,9,936,15,86,'Montaña','Vulnerable',2970.1
+654,'Pájaro Carpintero','Ave',2,'Vivíparo',101.92,36.7,7,4049,20,106,'Océano','Extinto en estado silvestre',378.8
+655,'Pez Globo','Pez',4,'Vivíparo',32.67,23.4,9,1373,27,61,'Desierto','En peligro',277.9
+656,'Gaviota','Ave',4,'Ovíparo',5.2,34.9,6,2132,32,127,'Océano','Vulnerable',887.8
+657,'Búho','Ave',0,'Ovíparo',88.2,35.4,4,2545,18,56,'Océano','Vulnerable',4347.5
+658,'Tiburón','Pez',6,'Vivíparo',46.93,14.2,5,2539,21,87,'Desierto','En peligro',1782.4
+659,'Iguana','Reptil',6,'Ovíparo',25.95,21.3,2,2756,20,91,'Océano','En peligro',2170.2
+660,'Caballito de Mar','Pez',4,'Vivíparo',7.14,15.6,3,5279,35,172,'Océano','Vulnerable',1950.9
+661,'Caballito de Mar','Pez',0,'Ovíparo',90.89,30.1,5,5671,27,91,'Desierto','En peligro',3571.9
+662,'Cocodrilo','Reptil',0,'Vivíparo',99.33,21.6,3,1753,32,156,'Selva','Extinto en estado silvestre',1297.5
+663,'Caballito de Mar','Pez',2,'Ovíparo',47.29,30.0,3,1690,11,90,'Desierto','Extinto en estado silvestre',342.1
+664,'Avispa','Insecto',8,'Ovíparo',106.33,36.3,9,2549,25,58,'Montaña','Vulnerable',1890.9
+665,'Búho','Ave',6,'Vivíparo',50.45,22.4,4,1958,18,157,'Selva','Vulnerable',3639.2
+666,'Pez Espada','Pez',0,'Vivíparo',114.23,39.2,4,5242,25,154,'Océano','Extinto en estado silvestre',4574.8
+667,'Puma','Mamífero',4,'Ovíparo',118.0,22.3,1,731,21,142,'Montaña','En peligro',254.2
+668,'Flamenco','Ave',6,'Ovíparo',98.3,16.4,7,5920,26,131,'Selva','En peligro',4052.5
+669,'Mariposa Monarca','Insecto',8,'Vivíparo',31.49,25.9,9,833,22,142,'Desierto','Vulnerable',331.0
+670,'Mariposa Monarca','Insecto',0,'Vivíparo',44.59,22.0,8,2152,13,168,'Océano','En peligro',1653.4
+671,'Tiburón','Pez',6,'Vivíparo',64.39,13.8,2,4686,22,170,'Selva','Vulnerable',111.6
+672,'Cocodrilo','Reptil',0,'Vivíparo',40.11,10.7,6,5318,21,62,'Desierto','En peligro',4557.7
+673,'Lobo','Mamífero',8,'Ovíparo',98.45,32.3,5,1235,11,135,'Selva','En peligro',3534.0
+674,'Pez Espada','Pez',2,'Ovíparo',111.38,38.0,8,4959,26,65,'Desierto','En peligro',1845.7
+675,'Serpiente','Reptil',6,'Vivíparo',118.31,23.2,1,284,24,81,'Montaña','Extinto en estado silvestre',1887.3
+676,'Avispa','Insecto',8,'Ovíparo',41.02,12.0,9,3538,22,139,'Montaña','Vulnerable',3199.3
+677,'Cacatúa','Ave',2,'Vivíparo',33.16,32.2,9,4233,11,144,'Océano','En peligro',448.3
+678,'Estrella de Mar','Insecto',2,'Ovíparo',20.17,36.0,7,75,35,155,'Desierto','En peligro',725.3
+679,'Tiburón','Pez',8,'Ovíparo',6.65,19.7,8,5845,15,167,'Selva','Extinto en estado silvestre',4236.1
+680,'Serpiente','Reptil',4,'Ovíparo',22.06,16.7,9,895,30,162,'Océano','Extinto en estado silvestre',1011.6
+681,'Caballito de Mar','Pez',8,'Ovíparo',34.86,20.1,5,2458,21,119,'Océano','Extinto en estado silvestre',3633.4
+682,'Mariposa Monarca','Insecto',0,'Vivíparo',47.54,37.2,2,5474,38,84,'Desierto','Vulnerable',1129.1
+683,'Chinchilla','Mamífero',4,'Vivíparo',14.06,22.5,1,4793,10,124,'Montaña','Extinto en estado silvestre',440.8
+684,'Caracol','Insecto',2,'Ovíparo',98.61,29.6,5,1744,24,86,'Océano','Extinto en estado silvestre',4500.2
+685,'Pez Espada','Pez',6,'Ovíparo',74.67,12.2,8,4783,12,71,'Selva','En peligro',4508.4
+686,'Serpiente','Reptil',2,'Vivíparo',67.95,18.4,4,938,37,135,'Océano','En peligro',3026.6
+687,'Tiburón','Pez',6,'Vivíparo',65.89,16.8,4,3341,19,109,'Desierto','Extinto en estado silvestre',2310.2
+688,'Águila','Ave',6,'Vivíparo',35.51,11.9,4,1707,15,91,'Montaña','En peligro',2763.8
+689,'Martinete','Ave',8,'Ovíparo',112.57,13.6,8,4339,14,72,'Desierto','En peligro',2040.7
+690,'Cocodrilo','Reptil',8,'Vivíparo',28.58,22.5,7,4251,31,151,'Océano','Extinto en estado silvestre',3785.9
+691,'Escorpión','Insecto',2,'Vivíparo',80.57,26.7,1,5308,17,130,'Selva','Extinto en estado silvestre',3772.8
+692,'Pez Espada','Pez',8,'Vivíparo',31.12,19.4,6,5029,15,78,'Océano','Extinto en estado silvestre',4094.9
+693,'Pájaro Carpintero','Ave',2,'Ovíparo',118.76,22.6,4,5318,20,179,'Océano','Extinto en estado silvestre',2614.7
+694,'Elefante','Mamífero',8,'Ovíparo',109.49,32.8,2,5194,23,151,'Montaña','Extinto en estado silvestre',4006.7
+695,'Águila','Ave',8,'Vivíparo',32.48,17.4,3,3778,30,163,'Desierto','En peligro',778.7
+696,'Mantis Religiosa','Insecto',6,'Vivíparo',118.51,11.0,4,5013,36,159,'Montaña','Vulnerable',150.8
+697,'Serpiente','Reptil',4,'Ovíparo',75.49,17.7,7,2956,29,61,'Océano','En peligro',3240.3
+698,'Elefante','Mamífero',8,'Ovíparo',87.7,37.6,1,645,14,140,'Selva','Extinto en estado silvestre',527.5
+699,'Pez Globo','Pez',8,'Ovíparo',34.67,10.5,1,2239,22,89,'Selva','Vulnerable',2753.4
+700,'Pez Globo','Pez',2,'Vivíparo',26.7,13.9,3,1129,36,150,'Montaña','Vulnerable',3605.7
+701,'Iguana','Reptil',6,'Vivíparo',103.11,12.0,2,1461,18,101,'Selva','Vulnerable',2035.5
+702,'Tigre','Mamífero',6,'Ovíparo',33.75,21.3,3,2278,39,111,'Selva','En peligro',219.5
+703,'Gato','Mamífero',4,'Vivíparo',110.19,29.4,3,2346,19,118,'Selva','Extinto en estado silvestre',4435.7
+704,'Hipopótamo','Mamífero',4,'Ovíparo',44.63,37.3,1,1051,20,159,'Océano','En peligro',216.3
+705,'Iguana','Reptil',4,'Ovíparo',2.09,33.8,6,526,15,110,'Selva','Vulnerable',4523.8
+706,'Serpiente','Reptil',8,'Ovíparo',71.47,17.5,8,2711,30,133,'Montaña','En peligro',263.2
+707,'Pez Payaso','Pez',2,'Vivíparo',43.08,29.0,5,4458,36,95,'Selva','Extinto en estado silvestre',3675.8
+708,'Flamenco','Ave',0,'Vivíparo',117.14,29.9,1,2417,36,121,'Océano','En peligro',4624.2
+709,'Pulpo','Insecto',2,'Vivíparo',47.02,12.7,7,2137,33,156,'Océano','Vulnerable',4534.9
+710,'Pez Espada','Pez',6,'Ovíparo',38.42,22.8,9,1725,14,99,'Selva','Vulnerable',4466.9
+711,'Jirafa','Mamífero',4,'Ovíparo',68.4,19.3,7,1728,14,154,'Montaña','En peligro',4415.4
+712,'Flamenco','Ave',0,'Vivíparo',87.86,14.7,9,4540,25,51,'Selva','Extinto en estado silvestre',2552.1
+713,'Estrella de Mar','Insecto',6,'Ovíparo',116.02,11.8,9,4054,33,115,'Desierto','Extinto en estado silvestre',2788.5
+714,'Elefante','Mamífero',4,'Ovíparo',9.28,10.8,2,4063,34,151,'Montaña','Extinto en estado silvestre',3098.6
+715,'Serpiente','Reptil',0,'Vivíparo',50.92,35.8,8,3051,17,158,'Montaña','En peligro',4479.8
+716,'Martinete','Ave',2,'Ovíparo',79.98,19.9,7,128,24,141,'Montaña','Vulnerable',4190.8
+717,'Tortuga','Reptil',6,'Vivíparo',1.59,24.8,7,3153,24,77,'Montaña','En peligro',3914.9
+718,'Estrella de Mar','Insecto',8,'Vivíparo',59.19,18.7,2,208,18,177,'Montaña','Vulnerable',3378.7
+719,'Avispa','Insecto',0,'Vivíparo',96.98,15.0,1,45,24,51,'Selva','En peligro',3092.0
+720,'León','Mamífero',0,'Ovíparo',7.05,17.8,4,4059,34,101,'Selva','Vulnerable',4612.3
+721,'Iguana','Reptil',2,'Vivíparo',41.53,15.1,7,0,17,77,'Montaña','Extinto en estado silvestre',963.3
+722,'Caballito de Mar','Pez',2,'Vivíparo',48.71,32.7,6,3235,23,50,'Montaña','En peligro',963.7
+723,'Pez Payaso','Pez',6,'Ovíparo',86.24,37.2,2,4932,16,93,'Desierto','Extinto en estado silvestre',4912.3
+724,'Cocodrilo','Reptil',8,'Vivíparo',36.19,23.0,7,1634,38,129,'Océano','En peligro',2765.8
+725,'Pulpo','Insecto',4,'Vivíparo',30.31,34.7,9,797,32,134,'Océano','Extinto en estado silvestre',2416.9
+726,'Pájaro Carpintero','Ave',0,'Ovíparo',14.74,22.8,2,903,21,66,'Montaña','Vulnerable',4253.0
+727,'Cocodrilo','Reptil',0,'Ovíparo',119.51,23.4,5,4353,10,64,'Montaña','Vulnerable',4248.9
+728,'Gato','Mamífero',6,'Vivíparo',57.13,24.6,2,3171,24,97,'Océano','Vulnerable',883.1
+729,'Caballito de Mar','Pez',4,'Vivíparo',6.74,34.6,1,1894,16,95,'Selva','Vulnerable',867.9
+730,'Delfín','Mamífero',4,'Ovíparo',10.11,38.1,7,5656,24,63,'Desierto','En peligro',3976.3
+731,'Gorrión','Ave',4,'Vivíparo',16.23,32.3,2,5266,19,149,'Desierto','Vulnerable',3928.2
+732,'Pez Payaso','Pez',6,'Ovíparo',26.2,36.7,6,4850,15,175,'Montaña','Extinto en estado silvestre',1126.0
+733,'Pez Payaso','Pez',0,'Ovíparo',89.11,29.3,7,3943,25,71,'Selva','Extinto en estado silvestre',4207.6
+734,'Caballito de Mar','Pez',2,'Vivíparo',67.48,35.2,1,2061,23,71,'Selva','En peligro',2400.3
+735,'Oso Pardo','Mamífero',0,'Vivíparo',93.42,26.7,9,4525,21,140,'Selva','En peligro',2350.0
+736,'Pulpo','Insecto',2,'Vivíparo',3.36,33.2,6,3364,26,125,'Selva','Vulnerable',4928.5
+737,'Tigre','Mamífero',2,'Ovíparo',32.55,31.2,2,874,19,129,'Montaña','En peligro',2596.1
+738,'Libélula','Insecto',6,'Vivíparo',49.26,32.5,1,2845,38,162,'Océano','Vulnerable',685.3
+739,'Cocodrilo','Reptil',4,'Ovíparo',52.05,17.0,1,2003,19,84,'Montaña','En peligro',1400.9
+740,'Caballito de Mar','Pez',6,'Vivíparo',7.37,14.6,2,1741,17,58,'Desierto','Vulnerable',1668.5
+741,'Orangután','Mamífero',2,'Ovíparo',61.87,29.6,9,5018,34,76,'Desierto','Extinto en estado silvestre',4792.3
+742,'Gaviota','Ave',0,'Ovíparo',35.11,24.5,2,887,20,138,'Montaña','Vulnerable',1320.3
+743,'Gaviota','Ave',2,'Ovíparo',23.79,32.9,1,268,36,108,'Desierto','Extinto en estado silvestre',2152.1
+744,'Mariposa Monarca','Insecto',6,'Ovíparo',80.87,14.4,4,3409,27,87,'Océano','Extinto en estado silvestre',3748.2
+745,'Libélula','Insecto',0,'Ovíparo',10.98,38.4,9,3877,22,138,'Océano','En peligro',1370.6
+746,'Caballito de Mar','Pez',4,'Ovíparo',104.17,31.1,8,5555,29,156,'Montaña','Extinto en estado silvestre',3508.2
+747,'Caracol','Insecto',6,'Vivíparo',108.08,10.7,7,4680,25,93,'Desierto','Vulnerable',1037.7
+748,'Gorrión','Ave',8,'Ovíparo',39.74,27.3,8,4182,36,72,'Océano','En peligro',1212.7
+749,'Puma','Mamífero',2,'Ovíparo',118.44,19.4,2,4446,32,119,'Océano','En peligro',4931.7
+750,'Delfín','Mamífero',4,'Vivíparo',48.75,18.2,5,3905,23,126,'Desierto','Vulnerable',1844.8
+751,'Escorpión','Insecto',4,'Vivíparo',115.52,37.1,7,3495,21,118,'Selva','En peligro',3648.5
+752,'Pulpo','Insecto',0,'Ovíparo',118.44,35.1,1,5797,22,72,'Desierto','Vulnerable',4200.3
+753,'Martinete','Ave',6,'Ovíparo',99.4,10.3,6,1832,36,86,'Montaña','Extinto en estado silvestre',1734.3
+754,'Iguana','Reptil',2,'Ovíparo',15.85,15.5,7,1254,22,67,'Selva','En peligro',1785.9
+755,'Gorila','Mamífero',8,'Vivíparo',70.55,31.6,8,3972,25,148,'Montaña','Extinto en estado silvestre',3865.5
+756,'Avispa','Insecto',2,'Ovíparo',88.1,35.4,5,5823,10,54,'Océano','En peligro',3035.0
+757,'Tiburón','Pez',6,'Ovíparo',10.22,31.5,8,567,33,90,'Selva','Vulnerable',1808.8
+758,'Escorpión','Insecto',4,'Ovíparo',107.34,25.8,1,4310,21,141,'Montaña','Vulnerable',3747.9
+759,'Mariposa Monarca','Insecto',8,'Ovíparo',102.36,39.5,4,816,18,172,'Montaña','Vulnerable',4318.5
+760,'Zebra','Mamífero',0,'Vivíparo',112.13,33.9,6,3770,22,131,'Montaña','Vulnerable',1175.3
+761,'Escorpión','Insecto',6,'Vivíparo',62.2,24.0,4,3679,22,121,'Selva','En peligro',121.9
+762,'Pez Espada','Pez',2,'Ovíparo',39.59,27.5,5,4852,17,55,'Montaña','Extinto en estado silvestre',1370.8
+763,'Caballito de Mar','Pez',6,'Vivíparo',61.26,11.3,2,4774,27,168,'Selva','Extinto en estado silvestre',3372.5
+764,'Pez Espada','Pez',0,'Ovíparo',87.79,38.9,7,4047,33,160,'Selva','En peligro',4576.3
+765,'Suricata','Ave',2,'Ovíparo',50.53,20.9,9,822,33,161,'Montaña','En peligro',4315.3
+766,'Caballito de Mar','Pez',8,'Vivíparo',42.86,29.8,7,5066,27,118,'Océano','Extinto en estado silvestre',1110.9
+767,'Jirafa','Mamífero',2,'Ovíparo',10.17,30.0,1,4045,36,170,'Desierto','Extinto en estado silvestre',4405.0
+768,'Serpiente','Reptil',2,'Vivíparo',54.22,11.7,2,2495,18,126,'Desierto','En peligro',4053.7
+769,'Libélula','Insecto',0,'Vivíparo',47.75,18.0,8,1794,10,69,'Selva','En peligro',3672.0
+770,'Mantis Religiosa','Insecto',2,'Ovíparo',79.93,29.7,1,4084,16,144,'Montaña','En peligro',3441.2
+771,'Escorpión','Insecto',6,'Vivíparo',53.21,37.4,2,2183,22,141,'Desierto','En peligro',4035.5
+772,'Pez Espada','Pez',4,'Vivíparo',1.48,33.4,5,5838,24,161,'Desierto','En peligro',4308.7
+773,'Tiburón','Pez',0,'Vivíparo',58.64,27.4,6,4856,11,67,'Montaña','Extinto en estado silvestre',4095.6
+774,'Pez Espada','Pez',0,'Vivíparo',93.07,17.0,1,2301,33,116,'Desierto','Extinto en estado silvestre',609.3
+775,'Iguana','Reptil',0,'Ovíparo',113.49,38.5,1,328,17,84,'Montaña','Vulnerable',3610.8
+776,'Cocodrilo','Reptil',6,'Ovíparo',23.96,22.1,2,2575,29,151,'Desierto','Vulnerable',4206.5
+777,'Serpiente','Reptil',6,'Vivíparo',51.28,14.5,3,1817,33,64,'Océano','Extinto en estado silvestre',928.6
+778,'Tortuga','Reptil',6,'Vivíparo',101.85,10.6,9,3572,14,100,'Montaña','Extinto en estado silvestre',1069.1
+779,'Serpiente','Reptil',6,'Vivíparo',6.1,38.5,3,2897,18,70,'Desierto','Vulnerable',3929.9
+780,'Avispa','Insecto',2,'Vivíparo',42.64,33.3,8,3942,26,52,'Selva','Vulnerable',1719.7
+781,'Mariposa Monarca','Insecto',0,'Vivíparo',71.34,16.5,6,1011,38,84,'Montaña','Vulnerable',1998.6
+782,'Iguana','Reptil',0,'Vivíparo',41.76,14.3,5,4468,30,57,'Desierto','En peligro',1885.9
+783,'Pulpo','Insecto',8,'Vivíparo',59.24,38.8,9,5179,23,52,'Océano','Vulnerable',1064.2
+784,'Tortuga','Reptil',4,'Ovíparo',112.75,17.2,8,2015,38,103,'Desierto','En peligro',4694.0
+785,'Cocodrilo','Reptil',2,'Ovíparo',3.85,23.9,3,2505,18,161,'Selva','En peligro',4029.3
+786,'Iguana','Reptil',4,'Ovíparo',10.27,28.3,7,779,24,179,'Montaña','Vulnerable',1252.8
+787,'Mariposa Monarca','Insecto',2,'Ovíparo',24.44,11.9,4,3531,31,68,'Océano','Extinto en estado silvestre',530.5
+788,'Águila','Ave',2,'Ovíparo',46.8,20.3,8,698,29,134,'Desierto','Vulnerable',1863.1
+789,'Búho','Ave',2,'Vivíparo',57.02,38.3,7,186,10,71,'Selva','Vulnerable',2076.6
+790,'Gaviota','Ave',0,'Vivíparo',5.36,31.0,3,969,22,79,'Selva','Vulnerable',35.6
+791,'Oso Pardo','Mamífero',4,'Vivíparo',106.03,21.0,7,3448,19,131,'Selva','Vulnerable',4435.8
+792,'Martinete','Ave',4,'Ovíparo',91.27,33.8,6,3485,21,178,'Desierto','Vulnerable',4256.4
+793,'Flamenco','Ave',6,'Ovíparo',32.89,35.1,6,4139,23,101,'Océano','En peligro',4250.8
+794,'Búho','Ave',4,'Vivíparo',31.56,14.6,3,165,15,78,'Desierto','Vulnerable',4029.0
+795,'Caballito de Mar','Pez',6,'Vivíparo',4.04,27.6,4,1175,20,111,'Océano','Extinto en estado silvestre',3665.7
+796,'Iguana','Reptil',8,'Ovíparo',48.5,21.0,4,700,39,78,'Montaña','Extinto en estado silvestre',3172.6
+797,'Libélula','Insecto',6,'Ovíparo',31.28,25.2,6,208,32,71,'Océano','En peligro',4801.5
+798,'Caballito de Mar','Pez',2,'Vivíparo',74.59,24.1,9,3269,16,168,'Selva','En peligro',3558.7
+799,'Cocodrilo','Reptil',0,'Vivíparo',66.2,25.1,5,5667,34,164,'Selva','Vulnerable',3151.3
+800,'Gaviota','Ave',2,'Vivíparo',114.9,25.7,8,3176,29,131,'Selva','Vulnerable',3944.1
+801,'Cacatúa','Ave',8,'Ovíparo',95.63,12.1,5,915,13,157,'Desierto','En peligro',1231.4
+802,'Pez Espada','Pez',0,'Vivíparo',10.62,15.3,6,4619,30,117,'Montaña','Extinto en estado silvestre',4835.7
+803,'Escorpión','Insecto',8,'Vivíparo',84.81,27.0,6,4998,21,89,'Océano','Vulnerable',95.9
+804,'Caballito de Mar','Pez',2,'Ovíparo',13.75,38.1,4,3751,39,140,'Selva','Extinto en estado silvestre',3242.1
+805,'Tiburón','Pez',0,'Ovíparo',39.45,32.4,5,5597,34,125,'Montaña','En peligro',385.6
+806,'Tortuga','Reptil',8,'Vivíparo',67.05,17.2,4,4309,11,139,'Montaña','Extinto en estado silvestre',4266.5
+807,'Gato','Mamífero',6,'Ovíparo',59.99,20.9,2,5468,29,114,'Desierto','Extinto en estado silvestre',4838.2
+808,'Caracol','Insecto',4,'Vivíparo',83.51,20.1,2,1495,23,155,'Océano','Extinto en estado silvestre',2043.1
+809,'Libélula','Insecto',2,'Ovíparo',97.39,33.1,8,1090,18,151,'Montaña','Vulnerable',4285.8
+810,'Tiburón','Pez',6,'Vivíparo',99.7,39.2,4,168,31,91,'Océano','En peligro',1678.7
+811,'Tiburón','Pez',8,'Vivíparo',7.94,20.7,9,2199,23,135,'Desierto','Vulnerable',797.1
+812,'Martinete','Ave',8,'Ovíparo',77.36,10.4,6,4569,15,141,'Océano','Extinto en estado silvestre',1383.3
+813,'Pez Globo','Pez',0,'Vivíparo',115.4,38.1,5,2244,32,138,'Desierto','Vulnerable',1509.3
+814,'Iguana','Reptil',6,'Vivíparo',90.85,32.6,7,4108,14,111,'Selva','Vulnerable',3153.4
+815,'Búho','Ave',8,'Ovíparo',62.87,35.0,6,740,29,83,'Océano','Vulnerable',3980.8
+816,'Panda','Mamífero',0,'Ovíparo',119.83,16.3,4,2933,36,75,'Desierto','En peligro',1026.2
+817,'Tortuga','Reptil',4,'Ovíparo',6.23,29.4,9,4053,28,166,'Montaña','En peligro',441.1
+818,'Abeja','Insecto',4,'Ovíparo',11.49,17.0,6,161,27,103,'Selva','Extinto en estado silvestre',1108.3
+819,'Mantis Religiosa','Insecto',0,'Ovíparo',92.41,10.3,3,607,16,70,'Montaña','Vulnerable',1482.8
+820,'Iguana','Reptil',6,'Ovíparo',66.42,14.7,4,727,30,103,'Selva','Extinto en estado silvestre',1399.1
+821,'Caballito de Mar','Pez',0,'Ovíparo',15.81,37.7,4,3784,10,147,'Selva','Vulnerable',1099.8
+822,'Pez Espada','Pez',0,'Ovíparo',45.66,16.5,8,642,29,112,'Océano','Extinto en estado silvestre',2330.1
+823,'Pez Payaso','Pez',6,'Vivíparo',8.65,27.6,5,5605,18,91,'Montaña','En peligro',4279.9
+824,'Mantis Religiosa','Insecto',4,'Vivíparo',63.64,39.0,8,3785,17,159,'Montaña','Extinto en estado silvestre',501.8
+825,'Serpiente','Reptil',8,'Ovíparo',13.38,12.3,8,4898,20,165,'Selva','En peligro',4310.2
+826,'Pez Globo','Pez',4,'Ovíparo',1.82,34.2,6,5907,16,177,'Selva','Vulnerable',2485.1
+827,'Suricata','Ave',6,'Vivíparo',39.37,27.9,5,3944,30,156,'Selva','Vulnerable',3302.4
+828,'Caracol','Insecto',2,'Ovíparo',28.83,19.7,2,4011,26,54,'Desierto','Vulnerable',4076.9
+829,'Cocodrilo','Reptil',6,'Vivíparo',44.09,20.9,1,5167,37,74,'Océano','Extinto en estado silvestre',1521.7
+830,'Cocodrilo','Reptil',4,'Vivíparo',42.7,10.8,7,4043,30,177,'Selva','Extinto en estado silvestre',4771.2
+831,'Cocodrilo','Reptil',4,'Ovíparo',75.97,17.7,7,1091,24,114,'Océano','Extinto en estado silvestre',418.8
+832,'Iguana','Reptil',6,'Vivíparo',81.92,22.7,2,2288,17,82,'Selva','En peligro',2638.4
+833,'Koala','Mamífero',6,'Vivíparo',16.16,31.5,3,3527,29,173,'Desierto','Vulnerable',1274.1
+834,'Pájaro Carpintero','Ave',6,'Ovíparo',59.15,18.2,8,1022,21,177,'Selva','Vulnerable',2039.8
+835,'Puma','Mamífero',4,'Vivíparo',106.81,27.4,4,1734,14,131,'Océano','En peligro',2244.4
+836,'Pez Payaso','Pez',0,'Vivíparo',18.66,32.0,5,3766,17,85,'Selva','En peligro',4572.6
+837,'Zebra','Mamífero',2,'Vivíparo',116.06,31.0,7,153,14,133,'Océano','Vulnerable',2208.0
+838,'Rinoceronte','Mamífero',0,'Vivíparo',3.3,27.7,8,4277,23,77,'Montaña','Vulnerable',3489.8
+839,'Estrella de Mar','Insecto',4,'Vivíparo',12.87,27.4,1,1207,13,109,'Océano','En peligro',4758.8
+840,'Cocodrilo','Reptil',0,'Ovíparo',22.13,31.6,7,2615,36,143,'Desierto','En peligro',2472.7
+841,'Nutria','Mamífero',6,'Ovíparo',56.91,20.1,3,4660,24,128,'Selva','Vulnerable',2041.6
+842,'Serpiente','Reptil',8,'Vivíparo',36.6,23.5,5,5319,29,163,'Montaña','Vulnerable',4864.8
+843,'Pájaro Carpintero','Ave',6,'Vivíparo',50.76,39.0,1,1980,38,122,'Océano','En peligro',4138.4
+844,'Zebra','Mamífero',2,'Ovíparo',112.96,30.1,3,4641,31,173,'Montaña','Vulnerable',4698.9
+845,'Camarón','Insecto',6,'Ovíparo',41.62,25.6,5,2889,19,88,'Desierto','En peligro',1986.2
+846,'Abeja','Insecto',8,'Ovíparo',101.93,27.3,1,2609,26,50,'Montaña','Vulnerable',3481.7
+847,'Pez Payaso','Pez',4,'Vivíparo',9.66,13.1,2,708,13,62,'Montaña','Extinto en estado silvestre',1248.1
+848,'León','Mamífero',0,'Ovíparo',97.62,27.8,3,4618,39,91,'Océano','Extinto en estado silvestre',4329.1
+849,'Águila','Ave',6,'Ovíparo',108.29,35.1,8,3157,10,84,'Desierto','Vulnerable',4665.4
+850,'Tortuga','Reptil',0,'Ovíparo',34.91,25.7,5,5962,37,86,'Selva','En peligro',1339.4
+851,'Panda','Mamífero',2,'Vivíparo',66.1,15.3,5,3217,15,124,'Selva','Extinto en estado silvestre',524.8
+852,'Pez Payaso','Pez',0,'Vivíparo',23.27,23.4,3,4049,17,176,'Selva','En peligro',1003.8
+853,'Libélula','Insecto',2,'Ovíparo',11.81,18.3,9,4766,13,69,'Selva','Extinto en estado silvestre',3164.2
+854,'Elefante','Mamífero',2,'Vivíparo',92.68,20.8,9,2365,33,106,'Selva','Extinto en estado silvestre',1361.0
+855,'Caballito de Mar','Pez',6,'Ovíparo',75.95,16.8,2,2582,23,96,'Montaña','Extinto en estado silvestre',3193.1
+856,'Gaviota','Ave',8,'Ovíparo',90.52,20.0,8,1383,11,157,'Selva','Vulnerable',1751.0
+857,'Cocodrilo','Reptil',0,'Vivíparo',53.32,34.7,1,3645,14,142,'Montaña','Vulnerable',4584.2
+858,'Flamenco','Ave',2,'Vivíparo',30.7,32.7,5,2121,24,177,'Océano','En peligro',2263.0
+859,'Suricata','Ave',2,'Ovíparo',51.8,24.7,7,2941,39,142,'Océano','Vulnerable',2488.2
+860,'Tortuga','Reptil',2,'Vivíparo',8.71,33.5,8,3880,28,171,'Desierto','En peligro',1740.4
+861,'Oso Pardo','Mamífero',4,'Vivíparo',34.74,39.3,8,364,23,92,'Selva','Extinto en estado silvestre',365.3
+862,'Serpiente','Reptil',0,'Vivíparo',36.41,22.2,6,2311,16,167,'Montaña','Vulnerable',2468.2
+863,'Pez Espada','Pez',0,'Vivíparo',86.03,39.4,7,2864,38,131,'Selva','Extinto en estado silvestre',3871.8
+864,'Suricata','Ave',2,'Ovíparo',7.32,17.4,4,5999,18,113,'Montaña','En peligro',4765.1
+865,'Iguana','Reptil',0,'Ovíparo',30.19,38.6,7,184,10,55,'Océano','Vulnerable',383.0
+866,'Caracol','Insecto',0,'Ovíparo',33.92,35.9,7,3503,33,145,'Desierto','Vulnerable',3987.0
+867,'Serpiente','Reptil',4,'Ovíparo',66.61,16.0,9,4788,29,80,'Desierto','Extinto en estado silvestre',1335.4
+868,'Iguana','Reptil',2,'Ovíparo',30.12,20.5,2,3005,38,136,'Desierto','Vulnerable',4114.1
+869,'Caballito de Mar','Pez',0,'Vivíparo',16.76,31.2,8,729,19,146,'Selva','En peligro',1710.1
+870,'Cacatúa','Ave',8,'Vivíparo',31.7,15.7,9,5225,20,152,'Montaña','Vulnerable',572.3
+871,'Tiburón','Pez',2,'Ovíparo',51.2,27.7,3,4075,30,157,'Selva','Extinto en estado silvestre',3060.1
+872,'Pez Espada','Pez',0,'Ovíparo',63.53,26.0,8,566,21,107,'Desierto','En peligro',4469.5
+873,'Libélula','Insecto',4,'Ovíparo',5.35,18.8,1,1311,10,106,'Selva','Vulnerable',908.0
+874,'Pez Espada','Pez',8,'Ovíparo',37.87,19.0,5,4438,30,120,'Selva','Extinto en estado silvestre',109.1
+875,'Tiburón','Pez',6,'Vivíparo',91.94,25.5,1,3423,34,53,'Selva','Extinto en estado silvestre',4419.2
+876,'Abeja','Insecto',6,'Vivíparo',72.12,19.0,1,611,17,91,'Selva','Extinto en estado silvestre',3489.2
+877,'Elefante','Mamífero',8,'Vivíparo',55.27,15.4,6,4100,33,151,'Montaña','Extinto en estado silvestre',4043.5
+878,'Pez Payaso','Pez',6,'Vivíparo',54.9,33.2,5,623,15,83,'Montaña','Extinto en estado silvestre',299.3
+879,'Cocodrilo','Reptil',8,'Vivíparo',44.9,27.5,5,497,21,67,'Desierto','En peligro',4452.3
+880,'Pez Payaso','Pez',0,'Vivíparo',41.7,23.1,2,222,18,146,'Desierto','Extinto en estado silvestre',2095.8
+881,'Pájaro Carpintero','Ave',6,'Vivíparo',48.68,15.4,9,5817,13,161,'Océano','Extinto en estado silvestre',4488.1
+882,'Iguana','Reptil',6,'Ovíparo',104.44,27.8,5,952,15,60,'Montaña','Vulnerable',324.7
+883,'Tortuga','Reptil',8,'Ovíparo',56.79,28.9,3,1906,12,170,'Selva','En peligro',4424.1
+884,'Oso Pardo','Mamífero',0,'Ovíparo',80.64,24.4,7,1160,11,57,'Montaña','Extinto en estado silvestre',3366.9
+885,'Flamenco','Ave',0,'Vivíparo',97.13,21.2,6,2784,34,109,'Selva','Vulnerable',2771.4
+886,'Gaviota','Ave',2,'Vivíparo',52.4,36.0,6,3834,30,91,'Selva','En peligro',309.0
+887,'Gorrión','Ave',2,'Ovíparo',100.86,31.1,5,5986,36,150,'Océano','En peligro',3442.1
+888,'Caballito de Mar','Pez',0,'Ovíparo',119.13,20.7,4,4633,27,144,'Océano','Extinto en estado silvestre',2988.9
+889,'Pez Globo','Pez',8,'Vivíparo',61.0,27.8,6,702,14,91,'Océano','En peligro',3631.5
+890,'Cocodrilo','Reptil',4,'Vivíparo',48.93,17.0,7,3408,31,170,'Océano','Vulnerable',3583.6
+891,'Gato','Mamífero',4,'Vivíparo',96.89,10.3,8,996,33,145,'Selva','En peligro',2218.7
+892,'Pez Globo','Pez',2,'Vivíparo',78.25,36.1,2,5949,30,79,'Selva','Extinto en estado silvestre',1023.5
+893,'Pez Payaso','Pez',6,'Vivíparo',73.97,34.6,4,3934,21,94,'Montaña','Extinto en estado silvestre',4594.8
+894,'Tigre de Bengala','Mamífero',4,'Vivíparo',106.45,29.2,7,4827,11,80,'Selva','Vulnerable',4628.0
+895,'Martinete','Ave',6,'Ovíparo',78.29,34.3,3,2260,38,95,'Montaña','En peligro',1059.7
+896,'Tortuga','Reptil',6,'Vivíparo',77.35,33.4,5,586,32,95,'Montaña','Vulnerable',3153.3
+897,'Caballito de Mar','Pez',0,'Ovíparo',25.62,35.8,7,2984,14,54,'Océano','En peligro',1014.4
+898,'Oso Pardo','Mamífero',4,'Ovíparo',82.9,36.8,9,2869,38,59,'Montaña','En peligro',4306.1
+899,'Hipopótamo','Mamífero',4,'Ovíparo',109.65,34.6,6,3576,36,159,'Desierto','En peligro',491.2
+900,'Águila','Ave',6,'Vivíparo',69.58,35.6,2,2723,27,56,'Desierto','En peligro',4951.0
+901,'Abeja','Insecto',6,'Vivíparo',108.5,25.1,9,1004,37,107,'Selva','Extinto en estado silvestre',3054.3
+902,'Estrella de Mar','Insecto',0,'Ovíparo',41.41,31.2,6,1775,15,96,'Desierto','Extinto en estado silvestre',114.7
+903,'Pulpo','Insecto',8,'Vivíparo',6.07,20.0,2,1114,20,141,'Océano','Vulnerable',4409.5
+904,'Mantis Religiosa','Insecto',4,'Vivíparo',53.97,35.8,1,2899,16,70,'Océano','En peligro',3422.3
+905,'Caballito de Mar','Pez',4,'Ovíparo',1.47,35.8,4,4720,25,121,'Montaña','Vulnerable',3486.6
+906,'Canguro','Mamífero',0,'Ovíparo',19.42,12.0,2,2689,17,153,'Selva','Vulnerable',1375.2
+907,'Tortuga','Reptil',0,'Ovíparo',23.68,20.4,7,612,12,139,'Desierto','Extinto en estado silvestre',1684.0
+908,'Pez Espada','Pez',8,'Vivíparo',64.53,15.1,7,3610,20,99,'Selva','Vulnerable',4572.1
+909,'Escorpión','Insecto',6,'Vivíparo',114.04,14.1,3,2577,29,150,'Montaña','Vulnerable',3174.8
+910,'Iguana','Reptil',4,'Vivíparo',3.36,22.4,1,1403,37,115,'Océano','Vulnerable',84.9
+911,'Iguana','Reptil',6,'Ovíparo',29.17,28.8,2,10,31,165,'Montaña','En peligro',1637.1
+912,'Camarón','Insecto',4,'Vivíparo',116.37,20.3,8,1997,28,65,'Desierto','En peligro',2992.8
+913,'Cocodrilo','Reptil',0,'Vivíparo',105.92,19.3,4,5635,20,98,'Océano','Vulnerable',740.1
+914,'Pez Espada','Pez',0,'Vivíparo',100.35,12.8,3,5836,31,87,'Desierto','Vulnerable',491.5
+915,'Pájaro Carpintero','Ave',0,'Ovíparo',11.92,21.5,7,554,18,63,'Selva','En peligro',297.0
+916,'Caballito de Mar','Pez',8,'Ovíparo',77.65,24.1,4,763,21,134,'Océano','En peligro',3152.9
+917,'Pez Espada','Pez',4,'Vivíparo',25.17,22.0,2,4646,25,83,'Selva','Vulnerable',1603.1
+918,'Flamenco','Ave',0,'Ovíparo',78.47,30.4,3,5946,14,176,'Océano','Vulnerable',1868.5
+919,'Abeja','Insecto',8,'Ovíparo',51.88,18.6,4,1870,11,112,'Desierto','En peligro',300.3
+920,'Escorpión','Insecto',6,'Vivíparo',76.64,31.5,1,754,19,91,'Desierto','En peligro',3690.1
+921,'Flamenco','Ave',8,'Vivíparo',52.03,36.5,8,3155,11,120,'Montaña','En peligro',3833.8
+922,'Pez Espada','Pez',8,'Ovíparo',109.02,27.7,8,336,39,134,'Montaña','En peligro',4147.2
+923,'Zebra','Mamífero',2,'Vivíparo',4.01,21.7,5,54,36,70,'Océano','Vulnerable',3258.4
+924,'Serpiente','Reptil',6,'Vivíparo',23.8,15.4,6,3392,32,162,'Océano','En peligro',3866.5
+925,'Cocodrilo','Reptil',2,'Vivíparo',100.13,38.0,4,1116,39,112,'Océano','En peligro',2886.2
+926,'Iguana','Reptil',4,'Vivíparo',88.67,32.6,3,4203,13,138,'Montaña','En peligro',2458.2
+927,'Canguro','Mamífero',8,'Vivíparo',23.17,17.4,3,3421,34,126,'Desierto','Extinto en estado silvestre',1299.1
+928,'Pez Globo','Pez',8,'Vivíparo',15.45,14.5,4,5851,34,176,'Selva','Extinto en estado silvestre',267.0
+929,'Mariposa Monarca','Insecto',8,'Vivíparo',38.04,11.5,6,4644,25,168,'Selva','En peligro',1459.2
+930,'Búho','Ave',8,'Ovíparo',58.34,15.7,2,2793,15,99,'Océano','Vulnerable',3418.2
+931,'Cocodrilo','Reptil',2,'Vivíparo',6.59,32.0,6,5753,19,76,'Selva','En peligro',4634.2
+932,'Gato','Mamífero',4,'Vivíparo',101.63,28.9,8,4682,38,172,'Selva','En peligro',1281.1
+933,'Suricata','Ave',2,'Ovíparo',62.99,39.0,9,5327,30,79,'Selva','En peligro',3349.3
+934,'Pez Espada','Pez',8,'Vivíparo',110.42,19.7,4,4945,16,67,'Montaña','En peligro',2391.3
+935,'Tigre de Bengala','Mamífero',4,'Vivíparo',39.76,33.6,5,4584,14,72,'Montaña','Extinto en estado silvestre',3137.8
+936,'Lobo','Mamífero',6,'Vivíparo',6.81,13.6,8,821,22,87,'Selva','En peligro',8.2
+937,'Suricata','Ave',2,'Ovíparo',104.69,26.9,2,4168,18,154,'Desierto','En peligro',613.4
+938,'Martinete','Ave',0,'Vivíparo',18.8,24.0,2,3162,18,79,'Desierto','Extinto en estado silvestre',1085.2
+939,'Iguana','Reptil',6,'Vivíparo',40.94,35.1,9,1901,32,168,'Montaña','En peligro',4467.3
+940,'Tiburón','Pez',6,'Ovíparo',56.26,31.0,6,2867,24,79,'Desierto','Vulnerable',202.7
+941,'Flamenco','Ave',8,'Ovíparo',59.54,15.8,9,447,13,123,'Océano','Extinto en estado silvestre',2848.2
+942,'Serpiente','Reptil',8,'Vivíparo',3.79,39.5,7,4925,10,120,'Océano','En peligro',4643.2
+943,'Cocodrilo','Reptil',6,'Vivíparo',63.68,34.7,5,4675,29,66,'Desierto','Vulnerable',3260.4
+944,'Gaviota','Ave',2,'Vivíparo',10.17,20.6,9,3295,37,118,'Selva','En peligro',2422.1
+945,'Nutria','Mamífero',4,'Vivíparo',39.89,34.8,9,3287,23,155,'Desierto','En peligro',1930.0
+946,'Nutria','Mamífero',2,'Ovíparo',117.08,38.7,2,165,28,128,'Selva','Vulnerable',3121.0
+947,'Perro','Mamífero',2,'Vivíparo',34.36,36.7,8,433,10,56,'Selva','Vulnerable',2402.0
+948,'Iguana','Reptil',6,'Ovíparo',97.73,26.7,8,1819,38,117,'Desierto','Vulnerable',3527.1
+949,'Chinchilla','Mamífero',2,'Vivíparo',61.73,27.3,2,4165,19,109,'Océano','En peligro',3088.9
+950,'Pez Payaso','Pez',4,'Ovíparo',25.09,13.2,7,542,13,154,'Selva','Vulnerable',2837.1
+951,'Delfín','Mamífero',6,'Vivíparo',86.91,14.9,1,2232,32,84,'Selva','Vulnerable',4784.1
+952,'Orangután','Mamífero',2,'Ovíparo',67.06,39.5,5,1673,27,78,'Montaña','En peligro',4178.5
+953,'Tortuga','Reptil',8,'Ovíparo',64.43,33.1,5,139,38,149,'Desierto','En peligro',3044.3
+954,'Caracol','Insecto',2,'Vivíparo',4.56,10.8,5,3334,37,168,'Montaña','En peligro',2693.3
+955,'Caballito de Mar','Pez',6,'Vivíparo',40.73,26.4,2,4251,21,83,'Selva','En peligro',3619.7
+956,'Iguana','Reptil',6,'Vivíparo',88.43,20.4,3,2378,16,53,'Selva','Extinto en estado silvestre',4019.6
+957,'Caballito de Mar','Pez',8,'Ovíparo',95.73,19.3,6,1503,15,115,'Montaña','En peligro',1476.3
+958,'Tiburón','Pez',6,'Vivíparo',97.96,26.7,1,3035,18,143,'Desierto','Vulnerable',3334.8
+959,'Zebra','Mamífero',0,'Vivíparo',5.45,19.6,6,4416,36,106,'Montaña','Vulnerable',675.9
+960,'Pez Payaso','Pez',6,'Ovíparo',20.36,17.5,6,1946,11,142,'Montaña','En peligro',2152.3
+961,'Nutria','Mamífero',2,'Ovíparo',118.28,38.1,7,4259,39,134,'Selva','Vulnerable',4692.2
+962,'Pez Payaso','Pez',4,'Vivíparo',19.5,11.2,9,5445,24,162,'Océano','Vulnerable',1631.6
+963,'Mariposa Monarca','Insecto',2,'Ovíparo',26.35,23.1,9,201,31,146,'Océano','Extinto en estado silvestre',771.3
+964,'Tiburón','Pez',6,'Ovíparo',96.51,25.3,4,4185,22,104,'Océano','Extinto en estado silvestre',730.8
+965,'Suricata','Ave',0,'Ovíparo',47.82,23.2,2,5089,20,55,'Desierto','En peligro',1968.7
+966,'Zebra','Mamífero',2,'Ovíparo',14.84,29.7,5,5568,31,78,'Montaña','Extinto en estado silvestre',1126.0
+967,'Camarón','Insecto',4,'Ovíparo',15.89,10.8,1,4681,31,129,'Desierto','Vulnerable',2134.7
+968,'Koala','Mamífero',2,'Ovíparo',10.97,36.5,5,1469,28,149,'Océano','En peligro',3594.5
+969,'Estrella de Mar','Insecto',8,'Vivíparo',22.5,25.0,3,4896,15,86,'Desierto','En peligro',4440.8
+970,'Chinchilla','Mamífero',0,'Vivíparo',60.14,26.6,7,985,18,112,'Desierto','Vulnerable',550.9
+971,'Suricata','Ave',6,'Vivíparo',2.79,23.9,7,3553,39,89,'Desierto','Vulnerable',3842.1
+972,'Gorrión','Ave',2,'Vivíparo',14.94,23.3,3,676,21,113,'Océano','Vulnerable',517.5
+973,'Caracol','Insecto',2,'Vivíparo',108.95,15.6,5,1904,38,171,'Desierto','Vulnerable',1897.2
+974,'Iguana','Reptil',2,'Vivíparo',105.31,25.1,9,4748,20,92,'Desierto','Extinto en estado silvestre',4982.7
+975,'Hipopótamo','Mamífero',2,'Vivíparo',100.14,22.6,4,3049,12,174,'Océano','Vulnerable',343.5
+976,'Cocodrilo','Reptil',4,'Vivíparo',85.05,24.0,2,1889,27,74,'Océano','En peligro',114.5
+977,'Pez Payaso','Pez',8,'Ovíparo',79.72,10.4,3,1828,33,104,'Desierto','Extinto en estado silvestre',1668.3
+978,'Búho','Ave',8,'Vivíparo',33.79,13.9,1,5535,22,155,'Montaña','En peligro',4755.6
+979,'Gorila','Mamífero',0,'Vivíparo',40.86,32.9,5,763,39,85,'Desierto','Vulnerable',100.3
+980,'Pájaro Carpintero','Ave',0,'Ovíparo',29.06,22.6,9,4750,22,157,'Selva','Vulnerable',1113.6
+981,'Pez Payaso','Pez',4,'Ovíparo',117.66,32.3,2,2403,24,152,'Océano','En peligro',3015.9
+982,'Estrella de Mar','Insecto',8,'Vivíparo',76.48,15.1,3,5483,28,68,'Montaña','En peligro',1168.8
+983,'Lobo','Mamífero',0,'Ovíparo',115.93,30.9,3,1359,24,143,'Selva','Vulnerable',269.1
+984,'Rinoceronte','Mamífero',6,'Vivíparo',33.34,18.7,7,84,37,148,'Selva','Extinto en estado silvestre',262.3
+985,'Tigre de Bengala','Mamífero',8,'Ovíparo',74.92,31.2,7,865,24,179,'Selva','Vulnerable',2795.8
+986,'Estrella de Mar','Insecto',2,'Vivíparo',91.32,12.6,1,3175,14,177,'Montaña','Extinto en estado silvestre',2809.5
+987,'Águila','Ave',8,'Ovíparo',12.27,20.0,3,1141,14,108,'Selva','Vulnerable',3532.4
+988,'Camarón','Insecto',6,'Ovíparo',80.37,13.6,1,1061,11,97,'Océano','Extinto en estado silvestre',658.8
+989,'Pájaro Carpintero','Ave',2,'Vivíparo',21.12,28.9,9,4578,27,175,'Montaña','Vulnerable',2499.3
+990,'Lobo','Mamífero',8,'Vivíparo',40.04,21.8,7,4231,15,52,'Océano','En peligro',3004.8
+991,'Estrella de Mar','Insecto',2,'Vivíparo',86.22,12.2,5,75,27,141,'Montaña','En peligro',1112.0
+992,'Pez Espada','Pez',2,'Vivíparo',53.37,25.8,7,315,39,164,'Océano','Vulnerable',2736.8
+993,'Abeja','Insecto',4,'Vivíparo',110.62,10.7,3,496,31,165,'Montaña','Vulnerable',3541.2
+994,'Gorrión','Ave',6,'Ovíparo',29.7,34.6,3,955,37,55,'Selva','Extinto en estado silvestre',4954.2
+995,'Gorila','Mamífero',4,'Ovíparo',19.3,38.2,1,620,37,85,'Océano','Extinto en estado silvestre',2982.2
+996,'Búho','Ave',8,'Vivíparo',41.12,34.3,5,3639,16,78,'Océano','Vulnerable',4306.0
+997,'Tortuga','Reptil',2,'Ovíparo',102.38,38.5,7,17,38,82,'Océano','Extinto en estado silvestre',4168.4
+998,'Tigre','Mamífero',8,'Ovíparo',101.84,36.9,3,4527,29,138,'Desierto','En peligro',4701.3
+999,'Pez Espada','Pez',8,'Vivíparo',44.95,36.8,5,615,35,134,'Selva','En peligro',3615.3
+1000,'Pez Espada','Pez',4,'Ovíparo',97.37,17.4,1,148,29,150,'Océano','Vulnerable',1065.6
